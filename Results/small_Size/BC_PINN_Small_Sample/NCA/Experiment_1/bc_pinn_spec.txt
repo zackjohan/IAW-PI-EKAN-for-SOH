@@ -1,0 +1,18 @@
+=== BC-PINN Specification ===
+Bayesian SOH estimator: encoder_layers=3, encoder_hidden=60, encoder_out=32, predictor_hidden=32, dropout=0.1
+Governing-eq. approximator G_theta: layers=4, hidden=50
+Physics calibrator s_psi: layers=3, hidden=32, dropout=0.1
+Activation: Sin (solution_u/G_theta), Tanh (calibrator)
+Loss: L_total = L_data + beta * L_Cphysics + lambda_mono * L_mono
+      beta=0.05 (FIXED, not adaptive), lambda_mono=0.5, mono reduction='mean' (L_mono = ReLU((u2-u1)*(y1-y2)) ¡ª identical form to PI-EKAN/PINN)
+Hyperparameter tuning: FIXED (not searched this run). Values were selected via an earlier 8-trial random search and are held fixed across datasets, consistent with PI-EKAN's own single-dataset sensitivity-analysis protocol.
+MC Dropout samples at inference: 50
+Optimizer: AdamW (weight_decay=1e-05); solution_u: warmup+cosine LR (1e-05->0.001->1e-06); G_theta+calibrator: constant LR (0.001)
+Batch size: 128
+Max epochs: 500
+Early stopping: patience=20, min_delta_ratio=0.001
+Trainable parameters: {'params_solution_u': 7241, 'params_dynamical_F': 6051, 'params_calibrator': 1377, 'params_inference_time': 7241, 'params_total_trainable': 14669}
+DEVIATION FROM PAPER (1): G_theta is trained jointly on real data (no PET-simulation pretraining/freezing stage available) -- see file docstring.
+DEVIATION FROM PAPER (2): a monotonicity term (identical to PI-EKAN's) was ADDED to the published data+physics loss, so BC-PINN receives the same loss ingredients as PI-EKAN rather than being handicapped. Set --lambda_mono 0.0 for the paper-faithful ablation.
+
+Per-run RMSE/MAE/MAPE/R2/coverage, total training time, average epoch time, peak CPU/GPU memory, deterministic (dropout-off) inference latency, and full MC-Dropout predictive-pass latency (T=50) are written to each experiment's results.txt so BC-PINN can be defended against PI-EKAN on accuracy AND on compute cost (note: MC-Dropout inference is inherently ~T x more expensive than a single-pass point estimate -- report both numbers, not just the deterministic one, to avoid an unfair inference-cost comparison).

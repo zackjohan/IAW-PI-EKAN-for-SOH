@@ -1,0 +1,26 @@
+DATASET: HNEI (PKL)
+NOMINAL_CAPACITY_Ah: 2.8
+SOC_INTERVAL_WIDTH: 1.0
+CAPACITY SOURCE: max(discharge_capacity_in_Ah) per cycle
+SOC TYPE: charge segment only (I > 0), soc = (Qc_rel / denom) * 100
+PS-BO LABEL: SOH = Qd / (nominal * SOC_interval_width)
+EXTRACTION RANGE: cycles 1..cycle_life-1 (original convention)
+NOTE: BV_Driver_T and Heating_I2 removed (7 SOC features only)
+REFERENCE: HNEI_18650_NMC_LCO_25C_0-100_0.5-1.5C_a
+AGING CYCLES EXTRACTED: 1086
+BEST LOWER SOC: 59
+BEST UPPER SOC: 98
+BEST SCORE (mean |r|): 0.89891339
+COVERAGE: 100.0000%
+FEATURES: ['ChargingTime', 'VoltageSlope', 'VoltageStd', 'VoltageKurtosis', 'VoltageSkewness', 'VoltageEntropy', 'VoltageCurvature']  (7 SOC features only)
+r_by_feature (SOH labels):
+  ChargingTime: -0.78929065
+  VoltageSlope: 0.97237484
+  VoltageStd: 0.97744360
+  VoltageKurtosis: -0.79311951
+  VoltageSkewness: 0.89084538
+  VoltageEntropy: 0.93525941
+  VoltageCurvature: -0.93406032
+
+analysis:
+  search_time_sec: 178.0170902999962

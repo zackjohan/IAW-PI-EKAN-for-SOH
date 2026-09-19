@@ -1,0 +1,26 @@
+DATASET: CALCE (PKL)
+NOMINAL_CAPACITY_Ah: 1.35
+SOC_INTERVAL_WIDTH: 1.0
+CAPACITY SOURCE: max(discharge_capacity_in_Ah) per cycle
+SOC TYPE: charge segment only (I > 0), soc = (Qc_rel / denom) * 100
+PS-BO LABEL: SOH = Qd / (nominal * SOC_interval_width)
+EXTRACTION RANGE: cycles 1..cycle_life-1 (original convention)
+NOTE: BV_Driver_T and Heating_I2 removed (7 SOC features only)
+REFERENCE: CALCE_CX2_35
+AGING CYCLES EXTRACTED: 1454
+BEST LOWER SOC: 13
+BEST UPPER SOC: 87
+BEST SCORE (mean |r|): 0.85547608
+COVERAGE: 99.8624%
+FEATURES: ['ChargingTime', 'VoltageSlope', 'VoltageStd', 'VoltageKurtosis', 'VoltageSkewness', 'VoltageEntropy', 'VoltageCurvature']  (7 SOC features only)
+r_by_feature (SOH labels):
+  ChargingTime: 0.95951009
+  VoltageSlope: -0.89015729
+  VoltageStd: 0.75788473
+  VoltageKurtosis: 0.70102710
+  VoltageSkewness: 0.93070121
+  VoltageEntropy: 0.92862364
+  VoltageCurvature: 0.82042851
+
+analysis:
+  search_time_sec: 273.52207630001067

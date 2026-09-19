@@ -1,0 +1,20 @@
+DATASET: STANFORD (CSV)
+MODE: PER-AGING-CYCLE
+CAPACITY SOURCE: Publishing_data_aging_summary_cell_XXX.csv
+CAPACITY COLUMN: Normalized Discharge Capacity [-]
+CAP THRESHOLD: <= 1.5
+SOC TYPE: ABSOLUTE (integrated from Normalized Current, start = 0 %)
+CHARGE DETECTION: Normalized Current (C-rate) > 0.0001
+DIAGNOSTIC EXCLUSION: cap_map join (cap > 1.5 excluded) + Cyc# <= 2 skipped
+CAPACITY SMOOTHING: PCHIP interpolation through diagnostic RPT anchors
+  Diagnostic capacity column: C/2 discharge CCCV Capacity (normalized)
+REFERENCE: Cell_059
+AGING CYCLES EXTRACTED: 1520
+BEST LOWER SOC: 51
+BEST UPPER SOC: 100
+BEST SCORE (mean |r|): 0.86099843
+COVERAGE: 100.0000%
+FEATURES: ['ChargingTime', 'VoltageSlope', 'VoltageStd', 'VoltageKurtosis', 'VoltageSkewness', 'VoltageEntropy', 'VoltageCurvature']  (7 SOC features only)
+
+analysis:
+  search_time_sec: 212.23937339999247

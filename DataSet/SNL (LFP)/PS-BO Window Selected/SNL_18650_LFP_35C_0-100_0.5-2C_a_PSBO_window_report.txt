@@ -1,0 +1,26 @@
+DATASET: SNL LFP (PKL)  — NCA/NMC groups removed (as in original)
+NOMINAL_CAPACITY_Ah: 1.1
+SOC_INTERVAL_WIDTH: 1.0
+CAPACITY SOURCE: max(discharge_capacity_in_Ah) per cycle
+SOC TYPE: charge segment only (I > 0), soc = (Qc_rel / max_q) * 100
+PS-BO LABEL: SOH = Qd / (nominal * SOC_interval_width)
+EXTRACTION RANGE: cycles 1..cycle_life-1 (original convention)
+NOTE: BV_Driver_T and Heating_I2 removed (7 SOC features only)
+REFERENCE: SNL_18650_LFP_35C_0-100_0.5-2C_a
+AGING CYCLES EXTRACTED: 3856
+BEST LOWER SOC: 52
+BEST UPPER SOC: 91
+BEST SCORE (mean |r|): 0.86468382
+COVERAGE: 100.0000%
+FEATURES: ['ChargingTime', 'VoltageSlope', 'VoltageStd', 'VoltageKurtosis', 'VoltageSkewness', 'VoltageEntropy', 'VoltageCurvature']  (7 SOC features only)
+r_by_feature (SOH labels):
+  ChargingTime: 0.89614426
+  VoltageSlope: -0.96460075
+  VoltageStd: -0.86211326
+  VoltageKurtosis: -0.86757080
+  VoltageSkewness: -0.98515488
+  VoltageEntropy: 0.49352415
+  VoltageCurvature: -0.98367863
+
+analysis:
+  search_time_sec: 492.33412309999403

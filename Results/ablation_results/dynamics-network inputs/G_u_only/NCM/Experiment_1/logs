@@ -1,0 +1,990 @@
+19:18:16 - INFO - Training Config: Epochs=500, Batch=256, LR=0.01
+19:18:16 - INFO - Adaptive Weights Config: γ=100.0, σ_init=1.0, σ_lr=0.0004
+19:18:16 - INFO - Early Stopping Config: Patience=20, Min Delta Ratio=0.001
+19:18:16 - INFO - Optimizer Config: solution_u scheduled (warmup_lr=0.005, lr=0.01), dynamical_F constant (lr=0.001), sigma constant (lr=0.0004)
+19:18:16 - INFO - === CELL ASSIGNMENT — Experiment 1 ===
+19:18:16 - INFO - Dataset: NCM
+19:18:16 - INFO - TRAIN  cells (19): ['3C_battery-12', '2C_battery-7', '3C_battery-15', 'R2.5_battery-7', '3C_battery-10', '3C_battery-6', '3C_battery-14', '3C_battery-7', '3C_battery-11', '3C_battery-13', '2C_battery-2', '3C_battery-9', 'R2.5_battery-5', '3C_battery-1', '3C_battery-5', '2C_battery-3', 'R2.5_battery-6', '2C_battery-6', 'R2.5_battery-1']
+19:18:16 - INFO - VAL    cells (5): ['3C_battery-2', '3C_battery-3', '2C_battery-1', '2C_battery-5', 'R2.5_battery-2']
+19:18:16 - INFO - TEST   cells (6): ['2C_battery-4', '2C_battery-8', '3C_battery-4', '3C_battery-8', 'R2.5_battery-4', 'R2.5_battery-8']
+19:18:18 - INFO - [Train] epoch:   1, data_loss:0.27958545, pde_loss:0.00911907, mono_loss:0.00000960, λ_data:0.998642, λ_pde:1.000244, λ_mono:1.000231, σ_data:0.995670, σ_pde:0.994865, σ_mono:0.994871, lr_main:0.005482, lr_F:0.001000, lr_σ:0.000400
+19:18:18 - INFO - [Timing] epoch_time:2.22s, avg_epoch_time:2.22s, training_time:2.2s, estimated_total:1112.0s
+19:18:18 - INFO - [Valid] epoch:   1, MSE:0.01474852, Rel_L2:0.12911108
+19:18:18 - INFO - [Loss_Compare] epoch:1, Train_Data_Loss:0.2795854, Val_MSE:0.0147485, Diff:0.2648369, Ratio:0.053
+19:18:18 - INFO - [Fit_Analysis] epoch:1, Status:INSUFFICIENT_DATA
+19:18:18 - INFO - [NEW_BEST] Validation MSE: 0.01474852 at epoch 1
+19:18:18 - INFO - [Test] MSE:0.01460838, MAE:0.11190513, MAPE:11.9515%, RMSE:0.12086512, R2:-5.52918005, Rel_L2:0.11527167
+19:18:21 - INFO - [Train] epoch:   2, data_loss:0.00730724, pde_loss:0.00080976, mono_loss:0.00000984, λ_data:1.009819, λ_pde:1.010689, λ_mono:1.010647, σ_data:0.990089, σ_pde:0.989659, σ_mono:0.989679, lr_main:0.005984, lr_F:0.001000, lr_σ:0.000400
+19:18:21 - INFO - [Timing] epoch_time:2.17s, avg_epoch_time:2.20s, training_time:4.6s, estimated_total:1098.0s
+19:18:21 - INFO - [Valid] epoch:   2, MSE:0.00217636, Rel_L2:0.04959688
+19:18:21 - INFO - [Loss_Compare] epoch:2, Train_Data_Loss:0.0073072, Val_MSE:0.0021764, Diff:0.0051309, Ratio:0.298
+19:18:21 - INFO - [Fit_Analysis] epoch:2, Status:GOOD_FIT
+19:18:21 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0073072, Val: 0.0021764
+19:18:21 - INFO - [NEW_BEST] Validation MSE: 0.00217636 at epoch 2
+19:18:21 - INFO - [Test] MSE:0.00201654, MAE:0.04068466, MAPE:4.3226%, RMSE:0.04490592, R2:0.09871143, Rel_L2:0.04609691
+19:18:23 - INFO - [Train] epoch:   3, data_loss:0.00101470, pde_loss:0.00014052, mono_loss:0.00000381, λ_data:1.020854, λ_pde:1.021169, λ_mono:1.021101, σ_data:0.984668, σ_pde:0.984515, σ_mono:0.984548, lr_main:0.006486, lr_F:0.001000, lr_σ:0.000400
+19:18:23 - INFO - [Timing] epoch_time:2.15s, avg_epoch_time:2.18s, training_time:7.0s, estimated_total:1090.1s
+19:18:23 - INFO - [Valid] epoch:   3, MSE:0.00066120, Rel_L2:0.02733724
+19:18:23 - INFO - [Loss_Compare] epoch:3, Train_Data_Loss:0.0010147, Val_MSE:0.0006612, Diff:0.0003535, Ratio:0.652
+19:18:23 - INFO - [Fit_Analysis] epoch:3, Status:GOOD_FIT
+19:18:23 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0010147, Val: 0.0006612
+19:18:23 - INFO - [NEW_BEST] Validation MSE: 0.00066120 at epoch 3
+19:18:23 - INFO - [Test] MSE:0.00027750, MAE:0.01296122, MAPE:1.4080%, RMSE:0.01665820, R2:0.87597400, Rel_L2:0.01757097
+19:18:25 - INFO - [Train] epoch:   4, data_loss:0.00028870, pde_loss:0.00003507, mono_loss:0.00000312, λ_data:1.031726, λ_pde:1.031643, λ_mono:1.031555, σ_data:0.979413, σ_pde:0.979453, σ_mono:0.979495, lr_main:0.006988, lr_F:0.001000, lr_σ:0.000400
+19:18:25 - INFO - [Timing] epoch_time:2.21s, avg_epoch_time:2.19s, training_time:9.4s, estimated_total:1093.3s
+19:18:26 - INFO - [Valid] epoch:   4, MSE:0.00041627, Rel_L2:0.02169088
+19:18:26 - INFO - [Loss_Compare] epoch:4, Train_Data_Loss:0.0002887, Val_MSE:0.0004163, Diff:0.0001276, Ratio:1.442
+19:18:26 - INFO - [Fit_Analysis] epoch:4, Status:GOOD_FIT
+19:18:26 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0002887, Val: 0.0004163
+19:18:26 - INFO - [NEW_BEST] Validation MSE: 0.00041627 at epoch 4
+19:18:26 - INFO - [Test] MSE:0.00022301, MAE:0.01089830, MAPE:1.1845%, RMSE:0.01493352, R2:0.90032613, Rel_L2:0.01597369
+19:18:28 - INFO - [Train] epoch:   5, data_loss:0.00018997, pde_loss:0.00001608, mono_loss:0.00000294, λ_data:1.042535, λ_pde:1.042149, λ_mono:1.042045, σ_data:0.974269, σ_pde:0.974452, σ_mono:0.974501, lr_main:0.007490, lr_F:0.001000, lr_σ:0.000400
+19:18:28 - INFO - [Timing] epoch_time:2.22s, avg_epoch_time:2.19s, training_time:11.8s, estimated_total:1096.5s
+19:18:28 - INFO - [Valid] epoch:   5, MSE:0.00042812, Rel_L2:0.02199751
+19:18:28 - INFO - [Loss_Compare] epoch:5, Train_Data_Loss:0.0001900, Val_MSE:0.0004281, Diff:0.0002382, Ratio:2.254
+19:18:28 - INFO - [Fit_Analysis] epoch:5, Status:GOOD_FIT
+19:18:28 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001900, Val: 0.0004281
+19:18:28 - INFO - [NO_IMPROVEMENT] delta < 0.00000042. Early stop counter: 1/20
+19:18:30 - INFO - [Train] epoch:   6, data_loss:0.00017436, pde_loss:0.00001043, mono_loss:0.00000286, λ_data:1.053343, λ_pde:1.052711, λ_mono:1.052594, σ_data:0.969205, σ_pde:0.969499, σ_mono:0.969553, lr_main:0.007992, lr_F:0.001000, lr_σ:0.000400
+19:18:30 - INFO - [Timing] epoch_time:2.19s, avg_epoch_time:2.19s, training_time:14.1s, estimated_total:1095.9s
+19:18:30 - INFO - [Valid] epoch:   6, MSE:0.00038554, Rel_L2:0.02087487
+19:18:30 - INFO - [Loss_Compare] epoch:6, Train_Data_Loss:0.0001744, Val_MSE:0.0003855, Diff:0.0002112, Ratio:2.211
+19:18:30 - INFO - [Fit_Analysis] epoch:6, Status:GOOD_FIT
+19:18:30 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001744, Val: 0.0003855
+19:18:30 - INFO - [NEW_BEST] Validation MSE: 0.00038554 at epoch 6
+19:18:30 - INFO - [Test] MSE:0.00017271, MAE:0.00979381, MAPE:1.0598%, RMSE:0.01314178, R2:0.92280924, Rel_L2:0.01405992
+19:18:33 - INFO - [Train] epoch:   7, data_loss:0.00016914, pde_loss:0.00000768, mono_loss:0.00000281, λ_data:1.064184, λ_pde:1.063346, λ_mono:1.063218, σ_data:0.964203, σ_pde:0.964587, σ_mono:0.964646, lr_main:0.008494, lr_F:0.001000, lr_σ:0.000400
+19:18:33 - INFO - [Timing] epoch_time:2.19s, avg_epoch_time:2.19s, training_time:16.5s, estimated_total:1095.9s
+19:18:33 - INFO - [Valid] epoch:   7, MSE:0.00038369, Rel_L2:0.02082463
+19:18:33 - INFO - [Loss_Compare] epoch:7, Train_Data_Loss:0.0001691, Val_MSE:0.0003837, Diff:0.0002145, Ratio:2.268
+19:18:33 - INFO - [Fit_Analysis] epoch:7, Status:GOOD_FIT
+19:18:33 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001691, Val: 0.0003837
+19:18:33 - INFO - [NEW_BEST] Validation MSE: 0.00038369 at epoch 7
+19:18:33 - INFO - [Test] MSE:0.00016343, MAE:0.00949854, MAPE:1.0273%, RMSE:0.01278412, R2:0.92695373, Rel_L2:0.01367471
+19:18:35 - INFO - [Train] epoch:   8, data_loss:0.00016491, pde_loss:0.00000601, mono_loss:0.00000276, λ_data:1.075080, λ_pde:1.074062, λ_mono:1.073923, σ_data:0.959251, σ_pde:0.959711, σ_mono:0.959773, lr_main:0.008996, lr_F:0.001000, lr_σ:0.000400
+19:18:35 - INFO - [Timing] epoch_time:2.13s, avg_epoch_time:2.18s, training_time:18.8s, estimated_total:1092.3s
+19:18:35 - INFO - [Valid] epoch:   8, MSE:0.00037117, Rel_L2:0.02048221
+19:18:35 - INFO - [Loss_Compare] epoch:8, Train_Data_Loss:0.0001649, Val_MSE:0.0003712, Diff:0.0002063, Ratio:2.251
+19:18:35 - INFO - [Fit_Analysis] epoch:8, Status:GOOD_FIT
+19:18:35 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001649, Val: 0.0003712
+19:18:35 - INFO - [NEW_BEST] Validation MSE: 0.00037117 at epoch 8
+19:18:35 - INFO - [Test] MSE:0.00016522, MAE:0.00948281, MAPE:1.0264%, RMSE:0.01285385, R2:0.92615461, Rel_L2:0.01374704
+19:18:37 - INFO - [Train] epoch:   9, data_loss:0.00016144, pde_loss:0.00000475, mono_loss:0.00000272, λ_data:1.086043, λ_pde:1.084866, λ_mono:1.084718, σ_data:0.954345, σ_pde:0.954868, σ_mono:0.954934, lr_main:0.009498, lr_F:0.001000, lr_σ:0.000400
+19:18:37 - INFO - [Timing] epoch_time:2.23s, avg_epoch_time:2.19s, training_time:21.2s, estimated_total:1094.8s
+19:18:37 - INFO - [Valid] epoch:   9, MSE:0.00036906, Rel_L2:0.02042385
+19:18:37 - INFO - [Loss_Compare] epoch:9, Train_Data_Loss:0.0001614, Val_MSE:0.0003691, Diff:0.0002076, Ratio:2.286
+19:18:37 - INFO - [Fit_Analysis] epoch:9, Status:GOOD_FIT
+19:18:37 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001614, Val: 0.0003691
+19:18:37 - INFO - [NEW_BEST] Validation MSE: 0.00036906 at epoch 9
+19:18:37 - INFO - [Test] MSE:0.00017382, MAE:0.00979546, MAPE:1.0591%, RMSE:0.01318415, R2:0.92231071, Rel_L2:0.01411977
+19:18:40 - INFO - [Train] epoch:  10, data_loss:0.00015929, pde_loss:0.00000382, mono_loss:0.00000268, λ_data:1.097083, λ_pde:1.095762, λ_mono:1.095606, σ_data:0.949478, σ_pde:0.950056, σ_mono:0.950125, lr_main:0.010000, lr_F:0.001000, lr_σ:0.000400
+19:18:40 - INFO - [Timing] epoch_time:2.16s, avg_epoch_time:2.19s, training_time:23.6s, estimated_total:1093.2s
+19:18:40 - INFO - [Valid] epoch:  10, MSE:0.00036239, Rel_L2:0.02023838
+19:18:40 - INFO - [Loss_Compare] epoch:10, Train_Data_Loss:0.0001593, Val_MSE:0.0003624, Diff:0.0002031, Ratio:2.275
+19:18:40 - INFO - [Fit_Analysis] epoch:10, Status:GOOD_FIT
+19:18:40 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001593, Val: 0.0003624
+19:18:40 - INFO - [NEW_BEST] Validation MSE: 0.00036239 at epoch 10
+19:18:40 - INFO - [Test] MSE:0.00015938, MAE:0.00924144, MAPE:0.9999%, RMSE:0.01262476, R2:0.92876345, Rel_L2:0.01349954
+19:18:42 - INFO - [Train] epoch:  11, data_loss:0.00015546, pde_loss:0.00000320, mono_loss:0.00000264, λ_data:1.108207, λ_pde:1.106753, λ_mono:1.106590, σ_data:0.944647, σ_pde:0.945274, σ_mono:0.945345, lr_main:0.010000, lr_F:0.001000, lr_σ:0.000400
+19:18:42 - INFO - [Timing] epoch_time:2.23s, avg_epoch_time:2.19s, training_time:26.0s, estimated_total:1095.1s
+19:18:42 - INFO - [Valid] epoch:  11, MSE:0.00035356, Rel_L2:0.01999050
+19:18:42 - INFO - [Loss_Compare] epoch:11, Train_Data_Loss:0.0001555, Val_MSE:0.0003536, Diff:0.0001981, Ratio:2.274
+19:18:42 - INFO - [Fit_Analysis] epoch:11, Status:GOOD_FIT
+19:18:42 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001555, Val: 0.0003536
+19:18:42 - INFO - [NEW_BEST] Validation MSE: 0.00035356 at epoch 11
+19:18:42 - INFO - [Test] MSE:0.00015850, MAE:0.00934438, MAPE:1.0096%, RMSE:0.01258981, R2:0.92915726, Rel_L2:0.01347345
+19:18:45 - INFO - [Train] epoch:  12, data_loss:0.00015246, pde_loss:0.00000290, mono_loss:0.00000260, λ_data:1.119420, λ_pde:1.117844, λ_mono:1.117673, σ_data:0.939851, σ_pde:0.940521, σ_mono:0.940593, lr_main:0.010000, lr_F:0.001000, lr_σ:0.000400
+19:18:45 - INFO - [Timing] epoch_time:2.21s, avg_epoch_time:2.19s, training_time:28.5s, estimated_total:1095.8s
+19:18:45 - INFO - [Valid] epoch:  12, MSE:0.00034568, Rel_L2:0.01976637
+19:18:45 - INFO - [Loss_Compare] epoch:12, Train_Data_Loss:0.0001525, Val_MSE:0.0003457, Diff:0.0001932, Ratio:2.267
+19:18:45 - INFO - [Fit_Analysis] epoch:12, Status:GOOD_FIT
+19:18:45 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001525, Val: 0.0003457
+19:18:45 - INFO - [NEW_BEST] Validation MSE: 0.00034568 at epoch 12
+19:18:45 - INFO - [Test] MSE:0.00014983, MAE:0.00899679, MAPE:0.9728%, RMSE:0.01224044, R2:0.93303454, Rel_L2:0.01307776
+19:18:47 - INFO - [Train] epoch:  13, data_loss:0.00014927, pde_loss:0.00000259, mono_loss:0.00000257, λ_data:1.130726, λ_pde:1.129036, λ_mono:1.128858, σ_data:0.935087, σ_pde:0.935794, σ_mono:0.935869, lr_main:0.009999, lr_F:0.001000, lr_σ:0.000400
+19:18:47 - INFO - [Timing] epoch_time:2.21s, avg_epoch_time:2.19s, training_time:30.9s, estimated_total:1096.5s
+19:18:47 - INFO - [Valid] epoch:  13, MSE:0.00033640, Rel_L2:0.01949928
+19:18:47 - INFO - [Loss_Compare] epoch:13, Train_Data_Loss:0.0001493, Val_MSE:0.0003364, Diff:0.0001871, Ratio:2.254
+19:18:47 - INFO - [Fit_Analysis] epoch:13, Status:GOOD_FIT
+19:18:47 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001493, Val: 0.0003364
+19:18:47 - INFO - [NEW_BEST] Validation MSE: 0.00033640 at epoch 13
+19:18:47 - INFO - [Test] MSE:0.00013732, MAE:0.00864418, MAPE:0.9341%, RMSE:0.01171842, R2:0.93862456, Rel_L2:0.01251223
+19:18:51 - INFO - [Train] epoch:  14, data_loss:0.00014734, pde_loss:0.00000228, mono_loss:0.00000255, λ_data:1.142129, λ_pde:1.140331, λ_mono:1.140147, σ_data:0.930354, σ_pde:0.931095, σ_mono:0.931171, lr_main:0.009998, lr_F:0.001000, lr_σ:0.000400
+19:18:51 - INFO - [Timing] epoch_time:4.19s, avg_epoch_time:2.34s, training_time:35.3s, estimated_total:1167.8s
+19:18:51 - INFO - [Valid] epoch:  14, MSE:0.00033573, Rel_L2:0.01947993
+19:18:51 - INFO - [Loss_Compare] epoch:14, Train_Data_Loss:0.0001473, Val_MSE:0.0003357, Diff:0.0001884, Ratio:2.279
+19:18:52 - INFO - [Fit_Analysis] epoch:14, Status:GOOD_FIT
+19:18:52 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001473, Val: 0.0003357
+19:18:52 - INFO - [NEW_BEST] Validation MSE: 0.00033573 at epoch 14
+19:18:52 - INFO - [Test] MSE:0.00014389, MAE:0.00886715, MAPE:0.9574%, RMSE:0.01199541, R2:0.93568879, Rel_L2:0.01282621
+19:18:54 - INFO - [Train] epoch:  15, data_loss:0.00014500, pde_loss:0.00000222, mono_loss:0.00000252, λ_data:1.153631, λ_pde:1.151732, λ_mono:1.151542, σ_data:0.925650, σ_pde:0.926422, σ_mono:0.926499, lr_main:0.009998, lr_F:0.001000, lr_σ:0.000400
+19:18:54 - INFO - [Timing] epoch_time:2.46s, avg_epoch_time:2.34s, training_time:38.1s, estimated_total:1172.0s
+19:18:54 - INFO - [Valid] epoch:  15, MSE:0.00034264, Rel_L2:0.01967933
+19:18:54 - INFO - [Loss_Compare] epoch:15, Train_Data_Loss:0.0001450, Val_MSE:0.0003426, Diff:0.0001976, Ratio:2.363
+19:18:54 - INFO - [Fit_Analysis] epoch:15, Status:GOOD_FIT
+19:18:54 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001450, Val: 0.0003426
+19:18:54 - INFO - [NO_IMPROVEMENT] delta < 0.00000034. Early stop counter: 1/20
+19:18:56 - INFO - [Train] epoch:  16, data_loss:0.00014255, pde_loss:0.00000210, mono_loss:0.00000252, λ_data:1.165235, λ_pde:1.163240, λ_mono:1.163043, σ_data:0.920976, σ_pde:0.921774, σ_mono:0.921853, lr_main:0.009996, lr_F:0.001000, lr_σ:0.000400
+19:18:56 - INFO - [Timing] epoch_time:2.17s, avg_epoch_time:2.33s, training_time:40.3s, estimated_total:1166.6s
+19:18:56 - INFO - [Valid] epoch:  16, MSE:0.00033855, Rel_L2:0.01956137
+19:18:56 - INFO - [Loss_Compare] epoch:16, Train_Data_Loss:0.0001426, Val_MSE:0.0003385, Diff:0.0001960, Ratio:2.375
+19:18:56 - INFO - [Fit_Analysis] epoch:16, Status:GOOD_FIT
+19:18:56 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001426, Val: 0.0003385
+19:18:56 - INFO - [NO_IMPROVEMENT] delta < 0.00000034. Early stop counter: 2/20
+19:18:59 - INFO - [Train] epoch:  17, data_loss:0.00013984, pde_loss:0.00000194, mono_loss:0.00000251, λ_data:1.176944, λ_pde:1.174856, λ_mono:1.174654, σ_data:0.916329, σ_pde:0.917152, σ_mono:0.917232, lr_main:0.009995, lr_F:0.001000, lr_σ:0.000400
+19:18:59 - INFO - [Timing] epoch_time:2.18s, avg_epoch_time:2.32s, training_time:42.6s, estimated_total:1162.1s
+19:18:59 - INFO - [Valid] epoch:  17, MSE:0.00033104, Rel_L2:0.01934313
+19:18:59 - INFO - [Loss_Compare] epoch:17, Train_Data_Loss:0.0001398, Val_MSE:0.0003310, Diff:0.0001912, Ratio:2.367
+19:18:59 - INFO - [Fit_Analysis] epoch:17, Status:GOOD_FIT
+19:18:59 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001398, Val: 0.0003310
+19:18:59 - INFO - [NEW_BEST] Validation MSE: 0.00033104 at epoch 17
+19:18:59 - INFO - [Test] MSE:0.00013446, MAE:0.00848598, MAPE:0.9168%, RMSE:0.01159590, R2:0.93990123, Rel_L2:0.01238890
+19:19:01 - INFO - [Train] epoch:  18, data_loss:0.00013845, pde_loss:0.00000216, mono_loss:0.00000250, λ_data:1.188759, λ_pde:1.186582, λ_mono:1.186374, σ_data:0.911709, σ_pde:0.912555, σ_mono:0.912636, lr_main:0.009994, lr_F:0.001000, lr_σ:0.000400
+19:19:01 - INFO - [Timing] epoch_time:2.12s, avg_epoch_time:2.31s, training_time:44.9s, estimated_total:1156.5s
+19:19:01 - INFO - [Valid] epoch:  18, MSE:0.00032756, Rel_L2:0.01924136
+19:19:01 - INFO - [Loss_Compare] epoch:18, Train_Data_Loss:0.0001385, Val_MSE:0.0003276, Diff:0.0001891, Ratio:2.366
+19:19:01 - INFO - [Fit_Analysis] epoch:18, Status:GOOD_FIT
+19:19:01 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001385, Val: 0.0003276
+19:19:01 - INFO - [NEW_BEST] Validation MSE: 0.00032756 at epoch 18
+19:19:01 - INFO - [Test] MSE:0.00013994, MAE:0.00870161, MAPE:0.9397%, RMSE:0.01182982, R2:0.93745208, Rel_L2:0.01265016
+19:19:03 - INFO - [Train] epoch:  19, data_loss:0.00013524, pde_loss:0.00000222, mono_loss:0.00000250, λ_data:1.200683, λ_pde:1.198420, λ_mono:1.198207, σ_data:0.907116, σ_pde:0.907982, σ_mono:0.908064, lr_main:0.009992, lr_F:0.001000, lr_σ:0.000400
+19:19:03 - INFO - [Timing] epoch_time:2.15s, avg_epoch_time:2.30s, training_time:47.3s, estimated_total:1152.3s
+19:19:03 - INFO - [Valid] epoch:  19, MSE:0.00032935, Rel_L2:0.01929372
+19:19:03 - INFO - [Loss_Compare] epoch:19, Train_Data_Loss:0.0001352, Val_MSE:0.0003293, Diff:0.0001941, Ratio:2.435
+19:19:03 - INFO - [Fit_Analysis] epoch:19, Status:GOOD_FIT
+19:19:03 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001352, Val: 0.0003293
+19:19:03 - INFO - [NO_IMPROVEMENT] delta < 0.00000033. Early stop counter: 1/20
+19:19:06 - INFO - [Train] epoch:  20, data_loss:0.00013360, pde_loss:0.00000192, mono_loss:0.00000249, λ_data:1.212717, λ_pde:1.210371, λ_mono:1.210153, σ_data:0.902549, σ_pde:0.903434, σ_mono:0.903516, lr_main:0.009990, lr_F:0.001000, lr_σ:0.000400
+19:19:06 - INFO - [Timing] epoch_time:2.18s, avg_epoch_time:2.30s, training_time:49.6s, estimated_total:1149.1s
+19:19:06 - INFO - [Valid] epoch:  20, MSE:0.00032116, Rel_L2:0.01905249
+19:19:06 - INFO - [Loss_Compare] epoch:20, Train_Data_Loss:0.0001336, Val_MSE:0.0003212, Diff:0.0001876, Ratio:2.404
+19:19:06 - INFO - [Fit_Analysis] epoch:20, Status:GOOD_FIT
+19:19:06 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001336, Val: 0.0003212
+19:19:06 - INFO - [NEW_BEST] Validation MSE: 0.00032116 at epoch 20
+19:19:06 - INFO - [Test] MSE:0.00013089, MAE:0.00833666, MAPE:0.9013%, RMSE:0.01144082, R2:0.94149792, Rel_L2:0.01221709
+19:19:08 - INFO - [Train] epoch:  21, data_loss:0.00013169, pde_loss:0.00000195, mono_loss:0.00000250, λ_data:1.224863, λ_pde:1.222437, λ_mono:1.222213, σ_data:0.898008, σ_pde:0.898910, σ_mono:0.898993, lr_main:0.009988, lr_F:0.001000, lr_σ:0.000400
+19:19:08 - INFO - [Timing] epoch_time:2.28s, avg_epoch_time:2.30s, training_time:52.1s, estimated_total:1148.7s
+19:19:08 - INFO - [Valid] epoch:  21, MSE:0.00032140, Rel_L2:0.01905942
+19:19:08 - INFO - [Loss_Compare] epoch:21, Train_Data_Loss:0.0001317, Val_MSE:0.0003214, Diff:0.0001897, Ratio:2.441
+19:19:08 - INFO - [Fit_Analysis] epoch:21, Status:GOOD_FIT
+19:19:08 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001317, Val: 0.0003214
+19:19:08 - INFO - [NO_IMPROVEMENT] delta < 0.00000032. Early stop counter: 1/20
+19:19:11 - INFO - [Train] epoch:  22, data_loss:0.00012998, pde_loss:0.00000202, mono_loss:0.00000249, λ_data:1.237122, λ_pde:1.234618, λ_mono:1.234389, σ_data:0.893492, σ_pde:0.894409, σ_mono:0.894493, lr_main:0.009986, lr_F:0.001000, lr_σ:0.000400
+19:19:11 - INFO - [Timing] epoch_time:2.31s, avg_epoch_time:2.30s, training_time:54.5s, estimated_total:1149.0s
+19:19:11 - INFO - [Valid] epoch:  22, MSE:0.00030859, Rel_L2:0.01867585
+19:19:11 - INFO - [Loss_Compare] epoch:22, Train_Data_Loss:0.0001300, Val_MSE:0.0003086, Diff:0.0001786, Ratio:2.374
+19:19:11 - INFO - [Fit_Analysis] epoch:22, Status:GOOD_FIT
+19:19:11 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001300, Val: 0.0003086
+19:19:11 - INFO - [NEW_BEST] Validation MSE: 0.00030859 at epoch 22
+19:19:11 - INFO - [Test] MSE:0.00012563, MAE:0.00821659, MAPE:0.8884%, RMSE:0.01120854, R2:0.94384938, Rel_L2:0.01196602
+19:19:13 - INFO - [Train] epoch:  23, data_loss:0.00012950, pde_loss:0.00000208, mono_loss:0.00000248, λ_data:1.249497, λ_pde:1.246916, λ_mono:1.246682, σ_data:0.889001, σ_pde:0.889932, σ_mono:0.890016, lr_main:0.009983, lr_F:0.001000, lr_σ:0.000400
+19:19:13 - INFO - [Timing] epoch_time:2.24s, avg_epoch_time:2.30s, training_time:56.9s, estimated_total:1147.7s
+19:19:13 - INFO - [Valid] epoch:  23, MSE:0.00030124, Rel_L2:0.01845195
+19:19:13 - INFO - [Loss_Compare] epoch:23, Train_Data_Loss:0.0001295, Val_MSE:0.0003012, Diff:0.0001717, Ratio:2.326
+19:19:13 - INFO - [Fit_Analysis] epoch:23, Status:GOOD_FIT
+19:19:13 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001295, Val: 0.0003012
+19:19:13 - INFO - [NEW_BEST] Validation MSE: 0.00030124 at epoch 23
+19:19:13 - INFO - [Test] MSE:0.00012830, MAE:0.00835374, MAPE:0.9034%, RMSE:0.01132681, R2:0.94265819, Rel_L2:0.01209455
+19:19:15 - INFO - [Train] epoch:  24, data_loss:0.00012635, pde_loss:0.00000232, mono_loss:0.00000249, λ_data:1.261989, λ_pde:1.259333, λ_mono:1.259094, σ_data:0.884534, σ_pde:0.885478, σ_mono:0.885563, lr_main:0.009980, lr_F:0.001000, lr_σ:0.000400
+19:19:15 - INFO - [Timing] epoch_time:2.09s, avg_epoch_time:2.29s, training_time:59.2s, estimated_total:1143.4s
+19:19:15 - INFO - [Valid] epoch:  24, MSE:0.00032473, Rel_L2:0.01915803
+19:19:15 - INFO - [Loss_Compare] epoch:24, Train_Data_Loss:0.0001264, Val_MSE:0.0003247, Diff:0.0001984, Ratio:2.570
+19:19:15 - INFO - [Fit_Analysis] epoch:24, Status:GOOD_FIT
+19:19:15 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001264, Val: 0.0003247
+19:19:15 - INFO - [NO_IMPROVEMENT] delta < 0.00000030. Early stop counter: 1/20
+19:19:18 - INFO - [Train] epoch:  25, data_loss:0.00012380, pde_loss:0.00000262, mono_loss:0.00000251, λ_data:1.274598, λ_pde:1.271869, λ_mono:1.271626, σ_data:0.880091, σ_pde:0.881047, σ_mono:0.881133, lr_main:0.009977, lr_F:0.001000, lr_σ:0.000400
+19:19:18 - INFO - [Timing] epoch_time:2.18s, avg_epoch_time:2.28s, training_time:61.5s, estimated_total:1141.3s
+19:19:18 - INFO - [Valid] epoch:  25, MSE:0.00031081, Rel_L2:0.01874296
+19:19:18 - INFO - [Loss_Compare] epoch:25, Train_Data_Loss:0.0001238, Val_MSE:0.0003108, Diff:0.0001870, Ratio:2.511
+19:19:18 - INFO - [Fit_Analysis] epoch:25, Status:GOOD_FIT
+19:19:18 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001238, Val: 0.0003108
+19:19:18 - INFO - [NO_IMPROVEMENT] delta < 0.00000030. Early stop counter: 2/20
+19:19:20 - INFO - [Train] epoch:  26, data_loss:0.00012153, pde_loss:0.00000265, mono_loss:0.00000249, λ_data:1.287327, λ_pde:1.284526, λ_mono:1.284278, σ_data:0.875673, σ_pde:0.876640, σ_mono:0.876725, lr_main:0.009974, lr_F:0.001000, lr_σ:0.000400
+19:19:20 - INFO - [Timing] epoch_time:2.11s, avg_epoch_time:2.28s, training_time:63.7s, estimated_total:1137.9s
+19:19:20 - INFO - [Valid] epoch:  26, MSE:0.00030392, Rel_L2:0.01853409
+19:19:20 - INFO - [Loss_Compare] epoch:26, Train_Data_Loss:0.0001215, Val_MSE:0.0003039, Diff:0.0001824, Ratio:2.501
+19:19:20 - INFO - [Fit_Analysis] epoch:26, Status:GOOD_FIT
+19:19:20 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001215, Val: 0.0003039
+19:19:20 - INFO - [NO_IMPROVEMENT] delta < 0.00000030. Early stop counter: 3/20
+19:19:22 - INFO - [Train] epoch:  27, data_loss:0.00011929, pde_loss:0.00000250, mono_loss:0.00000249, λ_data:1.300178, λ_pde:1.297306, λ_mono:1.297053, σ_data:0.871278, σ_pde:0.872255, σ_mono:0.872341, lr_main:0.009971, lr_F:0.001000, lr_σ:0.000400
+19:19:22 - INFO - [Timing] epoch_time:2.10s, avg_epoch_time:2.27s, training_time:65.9s, estimated_total:1134.6s
+19:19:22 - INFO - [Valid] epoch:  27, MSE:0.00029320, Rel_L2:0.01820427
+19:19:22 - INFO - [Loss_Compare] epoch:27, Train_Data_Loss:0.0001193, Val_MSE:0.0002932, Diff:0.0001739, Ratio:2.458
+19:19:22 - INFO - [Fit_Analysis] epoch:27, Status:GOOD_FIT
+19:19:22 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001193, Val: 0.0002932
+19:19:22 - INFO - [NEW_BEST] Validation MSE: 0.00029320 at epoch 27
+19:19:22 - INFO - [Test] MSE:0.00012337, MAE:0.00813339, MAPE:0.8798%, RMSE:0.01110741, R2:0.94485801, Rel_L2:0.01185604
+19:19:24 - INFO - [Train] epoch:  28, data_loss:0.00011657, pde_loss:0.00000264, mono_loss:0.00000250, λ_data:1.313151, λ_pde:1.310209, λ_mono:1.309952, σ_data:0.866907, σ_pde:0.867892, σ_mono:0.867979, lr_main:0.009968, lr_F:0.001000, lr_σ:0.000400
+19:19:24 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.26s, training_time:68.1s, estimated_total:1131.0s
+19:19:24 - INFO - [Valid] epoch:  28, MSE:0.00029478, Rel_L2:0.01825321
+19:19:24 - INFO - [Loss_Compare] epoch:28, Train_Data_Loss:0.0001166, Val_MSE:0.0002948, Diff:0.0001782, Ratio:2.529
+19:19:24 - INFO - [Fit_Analysis] epoch:28, Status:GOOD_FIT
+19:19:24 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001166, Val: 0.0002948
+19:19:24 - INFO - [NO_IMPROVEMENT] delta < 0.00000029. Early stop counter: 1/20
+19:19:26 - INFO - [Train] epoch:  29, data_loss:0.00011363, pde_loss:0.00000277, mono_loss:0.00000250, λ_data:1.326247, λ_pde:1.323237, λ_mono:1.322975, σ_data:0.862558, σ_pde:0.863552, σ_mono:0.863639, lr_main:0.009964, lr_F:0.001000, lr_σ:0.000400
+19:19:26 - INFO - [Timing] epoch_time:2.08s, avg_epoch_time:2.26s, training_time:70.3s, estimated_total:1127.9s
+19:19:26 - INFO - [Valid] epoch:  29, MSE:0.00029042, Rel_L2:0.01811762
+19:19:26 - INFO - [Loss_Compare] epoch:29, Train_Data_Loss:0.0001136, Val_MSE:0.0002904, Diff:0.0001768, Ratio:2.556
+19:19:26 - INFO - [Fit_Analysis] epoch:29, Status:GOOD_FIT
+19:19:26 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001136, Val: 0.0002904
+19:19:26 - INFO - [NEW_BEST] Validation MSE: 0.00029042 at epoch 29
+19:19:27 - INFO - [Test] MSE:0.00012797, MAE:0.00827918, MAPE:0.8951%, RMSE:0.01131244, R2:0.94280350, Rel_L2:0.01209924
+19:19:29 - INFO - [Train] epoch:  30, data_loss:0.00011074, pde_loss:0.00000292, mono_loss:0.00000251, λ_data:1.339469, λ_pde:1.336392, λ_mono:1.336125, σ_data:0.858233, σ_pde:0.859234, σ_mono:0.859321, lr_main:0.009960, lr_F:0.001000, lr_σ:0.000400
+19:19:29 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.25s, training_time:72.5s, estimated_total:1124.3s
+19:19:29 - INFO - [Valid] epoch:  30, MSE:0.00029642, Rel_L2:0.01830373
+19:19:29 - INFO - [Loss_Compare] epoch:30, Train_Data_Loss:0.0001107, Val_MSE:0.0002964, Diff:0.0001857, Ratio:2.677
+19:19:29 - INFO - [Fit_Analysis] epoch:30, Status:GOOD_FIT
+19:19:29 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001107, Val: 0.0002964
+19:19:29 - INFO - [NO_IMPROVEMENT] delta < 0.00000029. Early stop counter: 1/20
+19:19:31 - INFO - [Train] epoch:  31, data_loss:0.00010873, pde_loss:0.00000312, mono_loss:0.00000251, λ_data:1.352818, λ_pde:1.349673, λ_mono:1.349402, σ_data:0.853931, σ_pde:0.854939, σ_mono:0.855026, lr_main:0.009956, lr_F:0.001000, lr_σ:0.000400
+19:19:31 - INFO - [Timing] epoch_time:2.08s, avg_epoch_time:2.24s, training_time:74.7s, estimated_total:1121.6s
+19:19:31 - INFO - [Valid] epoch:  31, MSE:0.00026782, Rel_L2:0.01739847
+19:19:31 - INFO - [Loss_Compare] epoch:31, Train_Data_Loss:0.0001087, Val_MSE:0.0002678, Diff:0.0001591, Ratio:2.463
+19:19:31 - INFO - [Fit_Analysis] epoch:31, Status:GOOD_FIT
+19:19:31 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001087, Val: 0.0002678
+19:19:31 - INFO - [NEW_BEST] Validation MSE: 0.00026782 at epoch 31
+19:19:31 - INFO - [Test] MSE:0.00011127, MAE:0.00782291, MAPE:0.8461%, RMSE:0.01054847, R2:0.95026803, Rel_L2:0.01126318
+19:19:33 - INFO - [Train] epoch:  32, data_loss:0.00010555, pde_loss:0.00000336, mono_loss:0.00000250, λ_data:1.366295, λ_pde:1.363084, λ_mono:1.362808, σ_data:0.849651, σ_pde:0.850665, σ_mono:0.850752, lr_main:0.009952, lr_F:0.001000, lr_σ:0.000400
+19:19:33 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.24s, training_time:76.9s, estimated_total:1118.4s
+19:19:33 - INFO - [Valid] epoch:  32, MSE:0.00027865, Rel_L2:0.01774661
+19:19:33 - INFO - [Loss_Compare] epoch:32, Train_Data_Loss:0.0001055, Val_MSE:0.0002786, Diff:0.0001731, Ratio:2.640
+19:19:33 - INFO - [Fit_Analysis] epoch:32, Status:GOOD_FIT
+19:19:33 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001055, Val: 0.0002786
+19:19:33 - INFO - [NO_IMPROVEMENT] delta < 0.00000027. Early stop counter: 1/20
+19:19:35 - INFO - [Train] epoch:  33, data_loss:0.00010668, pde_loss:0.00000353, mono_loss:0.00000251, λ_data:1.379901, λ_pde:1.376624, λ_mono:1.376343, σ_data:0.845393, σ_pde:0.846413, σ_mono:0.846500, lr_main:0.009947, lr_F:0.001000, lr_σ:0.000400
+19:19:35 - INFO - [Timing] epoch_time:2.08s, avg_epoch_time:2.23s, training_time:79.1s, estimated_total:1116.0s
+19:19:35 - INFO - [Valid] epoch:  33, MSE:0.00026466, Rel_L2:0.01729557
+19:19:35 - INFO - [Loss_Compare] epoch:33, Train_Data_Loss:0.0001067, Val_MSE:0.0002647, Diff:0.0001580, Ratio:2.481
+19:19:35 - INFO - [Fit_Analysis] epoch:33, Status:GOOD_FIT
+19:19:35 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001067, Val: 0.0002647
+19:19:35 - INFO - [NEW_BEST] Validation MSE: 0.00026466 at epoch 33
+19:19:35 - INFO - [Test] MSE:0.00011715, MAE:0.00797554, MAPE:0.8628%, RMSE:0.01082359, R2:0.94764006, Rel_L2:0.01156700
+19:19:37 - INFO - [Train] epoch:  34, data_loss:0.00010078, pde_loss:0.00000381, mono_loss:0.00000253, λ_data:1.393638, λ_pde:1.390296, λ_mono:1.390011, σ_data:0.841158, σ_pde:0.842183, σ_mono:0.842270, lr_main:0.009942, lr_F:0.001000, lr_σ:0.000400
+19:19:37 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.23s, training_time:81.4s, estimated_total:1113.5s
+19:19:37 - INFO - [Valid] epoch:  34, MSE:0.00027353, Rel_L2:0.01758306
+19:19:37 - INFO - [Loss_Compare] epoch:34, Train_Data_Loss:0.0001008, Val_MSE:0.0002735, Diff:0.0001728, Ratio:2.714
+19:19:37 - INFO - [Fit_Analysis] epoch:34, Status:GOOD_FIT
+19:19:37 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0001008, Val: 0.0002735
+19:19:37 - INFO - [NO_IMPROVEMENT] delta < 0.00000026. Early stop counter: 1/20
+19:19:40 - INFO - [Train] epoch:  35, data_loss:0.00009869, pde_loss:0.00000407, mono_loss:0.00000253, λ_data:1.407507, λ_pde:1.404100, λ_mono:1.403811, σ_data:0.836945, σ_pde:0.837974, σ_mono:0.838061, lr_main:0.009937, lr_F:0.001000, lr_σ:0.000400
+19:19:40 - INFO - [Timing] epoch_time:2.10s, avg_epoch_time:2.22s, training_time:83.5s, estimated_total:1111.7s
+19:19:40 - INFO - [Valid] epoch:  35, MSE:0.00025920, Rel_L2:0.01711603
+19:19:40 - INFO - [Loss_Compare] epoch:35, Train_Data_Loss:0.0000987, Val_MSE:0.0002592, Diff:0.0001605, Ratio:2.626
+19:19:40 - INFO - [Fit_Analysis] epoch:35, Status:GOOD_FIT
+19:19:40 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000987, Val: 0.0002592
+19:19:40 - INFO - [NEW_BEST] Validation MSE: 0.00025920 at epoch 35
+19:19:40 - INFO - [Test] MSE:0.00011058, MAE:0.00795680, MAPE:0.8581%, RMSE:0.01051548, R2:0.95057863, Rel_L2:0.01124831
+19:19:42 - INFO - [Train] epoch:  36, data_loss:0.00009639, pde_loss:0.00000440, mono_loss:0.00000255, λ_data:1.421509, λ_pde:1.418038, λ_mono:1.417744, σ_data:0.832753, σ_pde:0.833786, σ_mono:0.833874, lr_main:0.009932, lr_F:0.001000, lr_σ:0.000400
+19:19:42 - INFO - [Timing] epoch_time:2.12s, avg_epoch_time:2.22s, training_time:85.9s, estimated_total:1110.3s
+19:19:42 - INFO - [Valid] epoch:  36, MSE:0.00026163, Rel_L2:0.01719631
+19:19:42 - INFO - [Loss_Compare] epoch:36, Train_Data_Loss:0.0000964, Val_MSE:0.0002616, Diff:0.0001652, Ratio:2.714
+19:19:42 - INFO - [Fit_Analysis] epoch:36, Status:GOOD_FIT
+19:19:42 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000964, Val: 0.0002616
+19:19:42 - INFO - [NO_IMPROVEMENT] delta < 0.00000026. Early stop counter: 1/20
+19:19:44 - INFO - [Train] epoch:  37, data_loss:0.00009246, pde_loss:0.00000465, mono_loss:0.00000255, λ_data:1.435647, λ_pde:1.432111, λ_mono:1.431813, σ_data:0.828583, σ_pde:0.829620, σ_mono:0.829708, lr_main:0.009927, lr_F:0.001000, lr_σ:0.000400
+19:19:44 - INFO - [Timing] epoch_time:2.08s, avg_epoch_time:2.22s, training_time:88.0s, estimated_total:1108.4s
+19:19:44 - INFO - [Valid] epoch:  37, MSE:0.00025744, Rel_L2:0.01705788
+19:19:44 - INFO - [Loss_Compare] epoch:37, Train_Data_Loss:0.0000925, Val_MSE:0.0002574, Diff:0.0001650, Ratio:2.784
+19:19:44 - INFO - [Fit_Analysis] epoch:37, Status:GOOD_FIT
+19:19:44 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000925, Val: 0.0002574
+19:19:44 - INFO - [NEW_BEST] Validation MSE: 0.00025744 at epoch 37
+19:19:44 - INFO - [Test] MSE:0.00010946, MAE:0.00765951, MAPE:0.8277%, RMSE:0.01046217, R2:0.95107841, Rel_L2:0.01118562
+19:19:46 - INFO - [Train] epoch:  38, data_loss:0.00008918, pde_loss:0.00000490, mono_loss:0.00000256, λ_data:1.449920, λ_pde:1.446321, λ_mono:1.446019, σ_data:0.824435, σ_pde:0.825475, σ_mono:0.825563, lr_main:0.009921, lr_F:0.001000, lr_σ:0.000400
+19:19:46 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.21s, training_time:90.3s, estimated_total:1106.5s
+19:19:46 - INFO - [Valid] epoch:  38, MSE:0.00026586, Rel_L2:0.01733481
+19:19:46 - INFO - [Loss_Compare] epoch:38, Train_Data_Loss:0.0000892, Val_MSE:0.0002659, Diff:0.0001767, Ratio:2.981
+19:19:46 - INFO - [Fit_Analysis] epoch:38, Status:GOOD_FIT
+19:19:46 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000892, Val: 0.0002659
+19:19:46 - INFO - [NO_IMPROVEMENT] delta < 0.00000026. Early stop counter: 1/20
+19:19:48 - INFO - [Train] epoch:  39, data_loss:0.00008802, pde_loss:0.00000527, mono_loss:0.00000257, λ_data:1.464331, λ_pde:1.460669, λ_mono:1.460362, σ_data:0.820308, σ_pde:0.821351, σ_mono:0.821439, lr_main:0.009916, lr_F:0.001000, lr_σ:0.000400
+19:19:48 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.21s, training_time:92.4s, estimated_total:1104.5s
+19:19:49 - INFO - [Valid] epoch:  39, MSE:0.00023965, Rel_L2:0.01645801
+19:19:49 - INFO - [Loss_Compare] epoch:39, Train_Data_Loss:0.0000880, Val_MSE:0.0002396, Diff:0.0001516, Ratio:2.723
+19:19:49 - INFO - [Fit_Analysis] epoch:39, Status:GOOD_FIT
+19:19:49 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000880, Val: 0.0002396
+19:19:49 - INFO - [NEW_BEST] Validation MSE: 0.00023965 at epoch 39
+19:19:49 - INFO - [Test] MSE:0.00010093, MAE:0.00749791, MAPE:0.8099%, RMSE:0.01004632, R2:0.95489025, Rel_L2:0.01073478
+19:19:51 - INFO - [Train] epoch:  40, data_loss:0.00008436, pde_loss:0.00000524, mono_loss:0.00000259, λ_data:1.478881, λ_pde:1.475155, λ_mono:1.474844, σ_data:0.816203, σ_pde:0.817248, σ_mono:0.817336, lr_main:0.009910, lr_F:0.001000, lr_σ:0.000400
+19:19:51 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.20s, training_time:94.7s, estimated_total:1102.5s
+19:19:51 - INFO - [Valid] epoch:  40, MSE:0.00023228, Rel_L2:0.01620315
+19:19:51 - INFO - [Loss_Compare] epoch:40, Train_Data_Loss:0.0000844, Val_MSE:0.0002323, Diff:0.0001479, Ratio:2.754
+19:19:51 - INFO - [Fit_Analysis] epoch:40, Status:GOOD_FIT
+19:19:51 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000844, Val: 0.0002323
+19:19:51 - INFO - [NEW_BEST] Validation MSE: 0.00023228 at epoch 40
+19:19:51 - INFO - [Test] MSE:0.00009146, MAE:0.00721729, MAPE:0.7792%, RMSE:0.00956337, R2:0.95912302, Rel_L2:0.01020868
+19:19:53 - INFO - [Train] epoch:  41, data_loss:0.00008203, pde_loss:0.00000549, mono_loss:0.00000261, λ_data:1.493572, λ_pde:1.489783, λ_mono:1.489468, σ_data:0.812118, σ_pde:0.813166, σ_mono:0.813253, lr_main:0.009904, lr_F:0.001000, lr_σ:0.000400
+19:19:53 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.20s, training_time:97.0s, estimated_total:1100.8s
+19:19:53 - INFO - [Valid] epoch:  41, MSE:0.00022486, Rel_L2:0.01594220
+19:19:53 - INFO - [Loss_Compare] epoch:41, Train_Data_Loss:0.0000820, Val_MSE:0.0002249, Diff:0.0001428, Ratio:2.741
+19:19:53 - INFO - [Fit_Analysis] epoch:41, Status:GOOD_FIT
+19:19:53 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000820, Val: 0.0002249
+19:19:53 - INFO - [NEW_BEST] Validation MSE: 0.00022486 at epoch 41
+19:19:53 - INFO - [Test] MSE:0.00009814, MAE:0.00758453, MAPE:0.8193%, RMSE:0.00990640, R2:0.95613801, Rel_L2:0.01056244
+19:19:55 - INFO - [Train] epoch:  42, data_loss:0.00008039, pde_loss:0.00000569, mono_loss:0.00000264, λ_data:1.508404, λ_pde:1.504553, λ_mono:1.504233, σ_data:0.808055, σ_pde:0.809104, σ_mono:0.809191, lr_main:0.009897, lr_F:0.001000, lr_σ:0.000400
+19:19:55 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.20s, training_time:99.2s, estimated_total:1099.0s
+19:19:55 - INFO - [Valid] epoch:  42, MSE:0.00022506, Rel_L2:0.01594933
+19:19:55 - INFO - [Loss_Compare] epoch:42, Train_Data_Loss:0.0000804, Val_MSE:0.0002251, Diff:0.0001447, Ratio:2.800
+19:19:55 - INFO - [Fit_Analysis] epoch:42, Status:GOOD_FIT
+19:19:55 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000804, Val: 0.0002251
+19:19:55 - INFO - [NO_IMPROVEMENT] delta < 0.00000022. Early stop counter: 1/20
+19:19:57 - INFO - [Train] epoch:  43, data_loss:0.00007766, pde_loss:0.00000568, mono_loss:0.00000266, λ_data:1.523380, λ_pde:1.519465, λ_mono:1.519141, σ_data:0.804012, σ_pde:0.805063, σ_mono:0.805150, lr_main:0.009891, lr_F:0.001000, lr_σ:0.000400
+19:19:57 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.19s, training_time:101.3s, estimated_total:1097.4s
+19:19:57 - INFO - [Valid] epoch:  43, MSE:0.00020762, Rel_L2:0.01531893
+19:19:57 - INFO - [Loss_Compare] epoch:43, Train_Data_Loss:0.0000777, Val_MSE:0.0002076, Diff:0.0001300, Ratio:2.674
+19:19:57 - INFO - [Fit_Analysis] epoch:43, Status:GOOD_FIT
+19:19:57 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000777, Val: 0.0002076
+19:19:57 - INFO - [NEW_BEST] Validation MSE: 0.00020762 at epoch 43
+19:19:58 - INFO - [Test] MSE:0.00008734, MAE:0.00713114, MAPE:0.7699%, RMSE:0.00934569, R2:0.96096277, Rel_L2:0.00997350
+19:20:00 - INFO - [Train] epoch:  44, data_loss:0.00007457, pde_loss:0.00000583, mono_loss:0.00000270, λ_data:1.538500, λ_pde:1.534522, λ_mono:1.534194, σ_data:0.799990, σ_pde:0.801042, σ_mono:0.801129, lr_main:0.009884, lr_F:0.001000, lr_σ:0.000400
+19:20:00 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.19s, training_time:103.6s, estimated_total:1096.0s
+19:20:00 - INFO - [Valid] epoch:  44, MSE:0.00021082, Rel_L2:0.01543651
+19:20:00 - INFO - [Loss_Compare] epoch:44, Train_Data_Loss:0.0000746, Val_MSE:0.0002108, Diff:0.0001363, Ratio:2.827
+19:20:00 - INFO - [Fit_Analysis] epoch:44, Status:GOOD_FIT
+19:20:00 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000746, Val: 0.0002108
+19:20:00 - INFO - [NO_IMPROVEMENT] delta < 0.00000021. Early stop counter: 1/20
+19:20:02 - INFO - [Train] epoch:  45, data_loss:0.00007054, pde_loss:0.00000540, mono_loss:0.00000273, λ_data:1.553766, λ_pde:1.549726, λ_mono:1.549393, σ_data:0.795988, σ_pde:0.797042, σ_mono:0.797129, lr_main:0.009877, lr_F:0.001000, lr_σ:0.000400
+19:20:02 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.19s, training_time:105.7s, estimated_total:1094.4s
+19:20:02 - INFO - [Valid] epoch:  45, MSE:0.00021487, Rel_L2:0.01558407
+19:20:02 - INFO - [Loss_Compare] epoch:45, Train_Data_Loss:0.0000705, Val_MSE:0.0002149, Diff:0.0001443, Ratio:3.046
+19:20:02 - INFO - [Fit_Analysis] epoch:45, Status:GOOD_FIT
+19:20:02 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000705, Val: 0.0002149
+19:20:02 - INFO - [NO_IMPROVEMENT] delta < 0.00000021. Early stop counter: 2/20
+19:20:04 - INFO - [Train] epoch:  46, data_loss:0.00006949, pde_loss:0.00000550, mono_loss:0.00000279, λ_data:1.569180, λ_pde:1.565077, λ_mono:1.564740, σ_data:0.792007, σ_pde:0.793061, σ_mono:0.793148, lr_main:0.009870, lr_F:0.001000, lr_σ:0.000400
+19:20:04 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.19s, training_time:107.9s, estimated_total:1093.0s
+19:20:04 - INFO - [Valid] epoch:  46, MSE:0.00021183, Rel_L2:0.01547341
+19:20:04 - INFO - [Loss_Compare] epoch:46, Train_Data_Loss:0.0000695, Val_MSE:0.0002118, Diff:0.0001423, Ratio:3.048
+19:20:04 - INFO - [Fit_Analysis] epoch:46, Status:GOOD_FIT
+19:20:04 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000695, Val: 0.0002118
+19:20:04 - INFO - [NO_IMPROVEMENT] delta < 0.00000021. Early stop counter: 3/20
+19:20:06 - INFO - [Train] epoch:  47, data_loss:0.00006816, pde_loss:0.00000549, mono_loss:0.00000281, λ_data:1.584742, λ_pde:1.580577, λ_mono:1.580235, σ_data:0.788047, σ_pde:0.789101, σ_mono:0.789188, lr_main:0.009863, lr_F:0.001000, lr_σ:0.000400
+19:20:06 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.18s, training_time:110.0s, estimated_total:1091.5s
+19:20:06 - INFO - [Valid] epoch:  47, MSE:0.00021315, Rel_L2:0.01552149
+19:20:06 - INFO - [Loss_Compare] epoch:47, Train_Data_Loss:0.0000682, Val_MSE:0.0002132, Diff:0.0001450, Ratio:3.127
+19:20:06 - INFO - [Fit_Analysis] epoch:47, Status:GOOD_FIT
+19:20:06 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000682, Val: 0.0002132
+19:20:06 - INFO - [NO_IMPROVEMENT] delta < 0.00000021. Early stop counter: 4/20
+19:20:08 - INFO - [Train] epoch:  48, data_loss:0.00006457, pde_loss:0.00000500, mono_loss:0.00000287, λ_data:1.600455, λ_pde:1.596227, λ_mono:1.595881, σ_data:0.784106, σ_pde:0.785161, σ_mono:0.785247, lr_main:0.009856, lr_F:0.001000, lr_σ:0.000400
+19:20:08 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.18s, training_time:112.1s, estimated_total:1090.1s
+19:20:08 - INFO - [Valid] epoch:  48, MSE:0.00019950, Rel_L2:0.01501616
+19:20:08 - INFO - [Loss_Compare] epoch:48, Train_Data_Loss:0.0000646, Val_MSE:0.0001995, Diff:0.0001349, Ratio:3.090
+19:20:08 - INFO - [Fit_Analysis] epoch:48, Status:GOOD_FIT
+19:20:08 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000646, Val: 0.0001995
+19:20:08 - INFO - [NEW_BEST] Validation MSE: 0.00019950 at epoch 48
+19:20:08 - INFO - [Test] MSE:0.00007643, MAE:0.00678199, MAPE:0.7299%, RMSE:0.00874247, R2:0.96583945, Rel_L2:0.00933589
+19:20:10 - INFO - [Train] epoch:  49, data_loss:0.00006222, pde_loss:0.00000503, mono_loss:0.00000293, λ_data:1.616320, λ_pde:1.612029, λ_mono:1.611678, σ_data:0.780186, σ_pde:0.781240, σ_mono:0.781327, lr_main:0.009848, lr_F:0.001000, lr_σ:0.000400
+19:20:10 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.18s, training_time:114.4s, estimated_total:1088.8s
+19:20:10 - INFO - [Valid] epoch:  49, MSE:0.00018683, Rel_L2:0.01453161
+19:20:10 - INFO - [Loss_Compare] epoch:49, Train_Data_Loss:0.0000622, Val_MSE:0.0001868, Diff:0.0001246, Ratio:3.003
+19:20:11 - INFO - [Fit_Analysis] epoch:49, Status:GOOD_FIT
+19:20:11 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000622, Val: 0.0001868
+19:20:11 - INFO - [NEW_BEST] Validation MSE: 0.00018683 at epoch 49
+19:20:11 - INFO - [Test] MSE:0.00007863, MAE:0.00690965, MAPE:0.7451%, RMSE:0.00886755, R2:0.96485496, Rel_L2:0.00947408
+19:20:13 - INFO - [Train] epoch:  50, data_loss:0.00006165, pde_loss:0.00000459, mono_loss:0.00000298, λ_data:1.632338, λ_pde:1.627984, λ_mono:1.627629, σ_data:0.776285, σ_pde:0.777340, σ_mono:0.777426, lr_main:0.009840, lr_F:0.001000, lr_σ:0.000400
+19:20:13 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.17s, training_time:116.6s, estimated_total:1087.5s
+19:20:13 - INFO - [Valid] epoch:  50, MSE:0.00017650, Rel_L2:0.01412413
+19:20:13 - INFO - [Loss_Compare] epoch:50, Train_Data_Loss:0.0000617, Val_MSE:0.0001765, Diff:0.0001148, Ratio:2.863
+19:20:13 - INFO - [Fit_Analysis] epoch:50, Status:GOOD_FIT
+19:20:13 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000617, Val: 0.0001765
+19:20:13 - INFO - [NEW_BEST] Validation MSE: 0.00017650 at epoch 50
+19:20:13 - INFO - [Test] MSE:0.00007054, MAE:0.00666500, MAPE:0.7168%, RMSE:0.00839864, R2:0.96847355, Rel_L2:0.00896735
+19:20:15 - INFO - [Train] epoch:  51, data_loss:0.00006105, pde_loss:0.00000420, mono_loss:0.00000305, λ_data:1.648510, λ_pde:1.644094, λ_mono:1.643735, σ_data:0.772404, σ_pde:0.773458, σ_mono:0.773544, lr_main:0.009832, lr_F:0.001000, lr_σ:0.000400
+19:20:15 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.17s, training_time:118.9s, estimated_total:1086.5s
+19:20:15 - INFO - [Valid] epoch:  51, MSE:0.00017923, Rel_L2:0.01423284
+19:20:15 - INFO - [Loss_Compare] epoch:51, Train_Data_Loss:0.0000611, Val_MSE:0.0001792, Diff:0.0001182, Ratio:2.936
+19:20:15 - INFO - [Fit_Analysis] epoch:51, Status:GOOD_FIT
+19:20:15 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000611, Val: 0.0001792
+19:20:15 - INFO - [NO_IMPROVEMENT] delta < 0.00000018. Early stop counter: 1/20
+19:20:17 - INFO - [Train] epoch:  52, data_loss:0.00005610, pde_loss:0.00000388, mono_loss:0.00000312, λ_data:1.664839, λ_pde:1.660360, λ_mono:1.659995, σ_data:0.768543, σ_pde:0.769597, σ_mono:0.769683, lr_main:0.009824, lr_F:0.001000, lr_σ:0.000400
+19:20:17 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.17s, training_time:121.0s, estimated_total:1085.3s
+19:20:17 - INFO - [Valid] epoch:  52, MSE:0.00016245, Rel_L2:0.01355045
+19:20:17 - INFO - [Loss_Compare] epoch:52, Train_Data_Loss:0.0000561, Val_MSE:0.0001625, Diff:0.0001064, Ratio:2.896
+19:20:17 - INFO - [Fit_Analysis] epoch:52, Status:GOOD_FIT
+19:20:17 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000561, Val: 0.0001625
+19:20:17 - INFO - [NEW_BEST] Validation MSE: 0.00016245 at epoch 52
+19:20:17 - INFO - [Test] MSE:0.00006733, MAE:0.00660139, MAPE:0.7100%, RMSE:0.00820527, R2:0.96990860, Rel_L2:0.00874653
+19:20:19 - INFO - [Train] epoch:  53, data_loss:0.00005501, pde_loss:0.00000402, mono_loss:0.00000319, λ_data:1.681326, λ_pde:1.676784, λ_mono:1.676414, σ_data:0.764702, σ_pde:0.765754, σ_mono:0.765840, lr_main:0.009815, lr_F:0.001000, lr_σ:0.000400
+19:20:19 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.17s, training_time:123.3s, estimated_total:1084.2s
+19:20:19 - INFO - [Valid] epoch:  53, MSE:0.00017701, Rel_L2:0.01414465
+19:20:19 - INFO - [Loss_Compare] epoch:53, Train_Data_Loss:0.0000550, Val_MSE:0.0001770, Diff:0.0001220, Ratio:3.218
+19:20:19 - INFO - [Fit_Analysis] epoch:53, Status:GOOD_FIT
+19:20:19 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000550, Val: 0.0001770
+19:20:19 - INFO - [NO_IMPROVEMENT] delta < 0.00000016. Early stop counter: 1/20
+19:20:21 - INFO - [Train] epoch:  54, data_loss:0.00005656, pde_loss:0.00000335, mono_loss:0.00000328, λ_data:1.697972, λ_pde:1.693366, λ_mono:1.692992, σ_data:0.760880, σ_pde:0.761932, σ_mono:0.762017, lr_main:0.009807, lr_F:0.001000, lr_σ:0.000400
+19:20:21 - INFO - [Timing] epoch_time:2.08s, avg_epoch_time:2.17s, training_time:125.4s, estimated_total:1083.4s
+19:20:22 - INFO - [Valid] epoch:  54, MSE:0.00016528, Rel_L2:0.01366785
+19:20:22 - INFO - [Loss_Compare] epoch:54, Train_Data_Loss:0.0000566, Val_MSE:0.0001653, Diff:0.0001087, Ratio:2.922
+19:20:22 - INFO - [Fit_Analysis] epoch:54, Status:GOOD_FIT
+19:20:22 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000566, Val: 0.0001653
+19:20:22 - INFO - [NO_IMPROVEMENT] delta < 0.00000016. Early stop counter: 2/20
+19:20:24 - INFO - [Train] epoch:  55, data_loss:0.00005415, pde_loss:0.00000302, mono_loss:0.00000334, λ_data:1.714778, λ_pde:1.710109, λ_mono:1.709731, σ_data:0.757077, σ_pde:0.758128, σ_mono:0.758213, lr_main:0.009798, lr_F:0.001000, lr_σ:0.000400
+19:20:24 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.16s, training_time:127.6s, estimated_total:1082.2s
+19:20:24 - INFO - [Valid] epoch:  55, MSE:0.00016468, Rel_L2:0.01364288
+19:20:24 - INFO - [Loss_Compare] epoch:55, Train_Data_Loss:0.0000542, Val_MSE:0.0001647, Diff:0.0001105, Ratio:3.041
+19:20:24 - INFO - [Fit_Analysis] epoch:55, Status:GOOD_FIT
+19:20:24 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000542, Val: 0.0001647
+19:20:24 - INFO - [NO_IMPROVEMENT] delta < 0.00000016. Early stop counter: 3/20
+19:20:26 - INFO - [Train] epoch:  56, data_loss:0.00005209, pde_loss:0.00000308, mono_loss:0.00000340, λ_data:1.731746, λ_pde:1.727014, λ_mono:1.726632, σ_data:0.753294, σ_pde:0.754344, σ_mono:0.754428, lr_main:0.009789, lr_F:0.001000, lr_σ:0.000400
+19:20:26 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.16s, training_time:129.7s, estimated_total:1081.1s
+19:20:26 - INFO - [Valid] epoch:  56, MSE:0.00015449, Rel_L2:0.01321436
+19:20:26 - INFO - [Loss_Compare] epoch:56, Train_Data_Loss:0.0000521, Val_MSE:0.0001545, Diff:0.0001024, Ratio:2.966
+19:20:26 - INFO - [Fit_Analysis] epoch:56, Status:GOOD_FIT
+19:20:26 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000521, Val: 0.0001545
+19:20:26 - INFO - [NEW_BEST] Validation MSE: 0.00015449 at epoch 56
+19:20:26 - INFO - [Test] MSE:0.00006929, MAE:0.00662278, MAPE:0.7130%, RMSE:0.00832423, R2:0.96902972, Rel_L2:0.00888375
+19:20:28 - INFO - [Train] epoch:  57, data_loss:0.00004973, pde_loss:0.00000286, mono_loss:0.00000347, λ_data:1.748880, λ_pde:1.744084, λ_mono:1.743695, σ_data:0.749530, σ_pde:0.750578, σ_mono:0.750663, lr_main:0.009780, lr_F:0.001000, lr_σ:0.000400
+19:20:28 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.16s, training_time:131.9s, estimated_total:1080.2s
+19:20:28 - INFO - [Valid] epoch:  57, MSE:0.00016472, Rel_L2:0.01364485
+19:20:28 - INFO - [Loss_Compare] epoch:57, Train_Data_Loss:0.0000497, Val_MSE:0.0001647, Diff:0.0001150, Ratio:3.312
+19:20:28 - INFO - [Fit_Analysis] epoch:57, Status:GOOD_FIT
+19:20:28 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000497, Val: 0.0001647
+19:20:28 - INFO - [NO_IMPROVEMENT] delta < 0.00000015. Early stop counter: 1/20
+19:20:30 - INFO - [Train] epoch:  58, data_loss:0.00004989, pde_loss:0.00000289, mono_loss:0.00000351, λ_data:1.766177, λ_pde:1.761318, λ_mono:1.760924, σ_data:0.745785, σ_pde:0.746831, σ_mono:0.746916, lr_main:0.009770, lr_F:0.001000, lr_σ:0.000400
+19:20:30 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.16s, training_time:134.1s, estimated_total:1079.2s
+19:20:30 - INFO - [Valid] epoch:  58, MSE:0.00015034, Rel_L2:0.01303537
+19:20:30 - INFO - [Loss_Compare] epoch:58, Train_Data_Loss:0.0000499, Val_MSE:0.0001503, Diff:0.0001004, Ratio:3.013
+19:20:30 - INFO - [Fit_Analysis] epoch:58, Status:GOOD_FIT
+19:20:30 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000499, Val: 0.0001503
+19:20:30 - INFO - [NEW_BEST] Validation MSE: 0.00015034 at epoch 58
+19:20:30 - INFO - [Test] MSE:0.00006238, MAE:0.00630376, MAPE:0.6770%, RMSE:0.00789837, R2:0.97211754, Rel_L2:0.00842767
+19:20:32 - INFO - [Train] epoch:  59, data_loss:0.00004816, pde_loss:0.00000277, mono_loss:0.00000354, λ_data:1.783643, λ_pde:1.778718, λ_mono:1.778320, σ_data:0.742058, σ_pde:0.743103, σ_mono:0.743188, lr_main:0.009761, lr_F:0.001000, lr_σ:0.000400
+19:20:32 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.16s, training_time:136.3s, estimated_total:1078.3s
+19:20:32 - INFO - [Valid] epoch:  59, MSE:0.00014735, Rel_L2:0.01290537
+19:20:32 - INFO - [Loss_Compare] epoch:59, Train_Data_Loss:0.0000482, Val_MSE:0.0001474, Diff:0.0000992, Ratio:3.060
+19:20:32 - INFO - [Fit_Analysis] epoch:59, Status:GOOD_FIT
+19:20:32 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000482, Val: 0.0001474
+19:20:32 - INFO - [NEW_BEST] Validation MSE: 0.00014735 at epoch 59
+19:20:33 - INFO - [Test] MSE:0.00005717, MAE:0.00612828, MAPE:0.6571%, RMSE:0.00756127, R2:0.97444671, Rel_L2:0.00806356
+19:20:35 - INFO - [Train] epoch:  60, data_loss:0.00004797, pde_loss:0.00000246, mono_loss:0.00000357, λ_data:1.801276, λ_pde:1.796287, λ_mono:1.795885, σ_data:0.738351, σ_pde:0.739394, σ_mono:0.739478, lr_main:0.009751, lr_F:0.001000, lr_σ:0.000400
+19:20:35 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.15s, training_time:138.6s, estimated_total:1077.5s
+19:20:35 - INFO - [Valid] epoch:  60, MSE:0.00014183, Rel_L2:0.01266133
+19:20:35 - INFO - [Loss_Compare] epoch:60, Train_Data_Loss:0.0000480, Val_MSE:0.0001418, Diff:0.0000939, Ratio:2.957
+19:20:35 - INFO - [Fit_Analysis] epoch:60, Status:GOOD_FIT
+19:20:35 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000480, Val: 0.0001418
+19:20:35 - INFO - [NEW_BEST] Validation MSE: 0.00014183 at epoch 60
+19:20:35 - INFO - [Test] MSE:0.00005605, MAE:0.00607169, MAPE:0.6505%, RMSE:0.00748633, R2:0.97495079, Rel_L2:0.00798869
+19:20:37 - INFO - [Train] epoch:  61, data_loss:0.00004750, pde_loss:0.00000223, mono_loss:0.00000360, λ_data:1.819079, λ_pde:1.814026, λ_mono:1.813621, σ_data:0.734662, σ_pde:0.735704, σ_mono:0.735788, lr_main:0.009741, lr_F:0.001000, lr_σ:0.000400
+19:20:37 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.15s, training_time:140.8s, estimated_total:1076.6s
+19:20:37 - INFO - [Valid] epoch:  61, MSE:0.00014350, Rel_L2:0.01273543
+19:20:37 - INFO - [Loss_Compare] epoch:61, Train_Data_Loss:0.0000475, Val_MSE:0.0001435, Diff:0.0000960, Ratio:3.021
+19:20:37 - INFO - [Fit_Analysis] epoch:61, Status:GOOD_FIT
+19:20:37 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000475, Val: 0.0001435
+19:20:37 - INFO - [NO_IMPROVEMENT] delta < 0.00000014. Early stop counter: 1/20
+19:20:39 - INFO - [Train] epoch:  62, data_loss:0.00004787, pde_loss:0.00000222, mono_loss:0.00000362, λ_data:1.837055, λ_pde:1.831937, λ_mono:1.831527, σ_data:0.730992, σ_pde:0.732032, σ_mono:0.732115, lr_main:0.009731, lr_F:0.001000, lr_σ:0.000400
+19:20:39 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.15s, training_time:143.0s, estimated_total:1075.8s
+19:20:39 - INFO - [Valid] epoch:  62, MSE:0.00014205, Rel_L2:0.01267094
+19:20:39 - INFO - [Loss_Compare] epoch:62, Train_Data_Loss:0.0000479, Val_MSE:0.0001420, Diff:0.0000942, Ratio:2.968
+19:20:39 - INFO - [Fit_Analysis] epoch:62, Status:GOOD_FIT
+19:20:39 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000479, Val: 0.0001420
+19:20:39 - INFO - [NO_IMPROVEMENT] delta < 0.00000014. Early stop counter: 2/20
+19:20:41 - INFO - [Train] epoch:  63, data_loss:0.00004840, pde_loss:0.00000250, mono_loss:0.00000362, λ_data:1.855203, λ_pde:1.850021, λ_mono:1.849605, σ_data:0.727341, σ_pde:0.728378, σ_mono:0.728461, lr_main:0.009720, lr_F:0.001000, lr_σ:0.000400
+19:20:41 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.15s, training_time:145.1s, estimated_total:1074.9s
+19:20:41 - INFO - [Valid] epoch:  63, MSE:0.00014404, Rel_L2:0.01275925
+19:20:41 - INFO - [Loss_Compare] epoch:63, Train_Data_Loss:0.0000484, Val_MSE:0.0001440, Diff:0.0000956, Ratio:2.976
+19:20:41 - INFO - [Fit_Analysis] epoch:63, Status:GOOD_FIT
+19:20:41 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000484, Val: 0.0001440
+19:20:41 - INFO - [NO_IMPROVEMENT] delta < 0.00000014. Early stop counter: 3/20
+19:20:43 - INFO - [Train] epoch:  64, data_loss:0.00004764, pde_loss:0.00000237, mono_loss:0.00000364, λ_data:1.873527, λ_pde:1.868280, λ_mono:1.867858, σ_data:0.723708, σ_pde:0.724742, σ_mono:0.724826, lr_main:0.009710, lr_F:0.001000, lr_σ:0.000400
+19:20:43 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.15s, training_time:147.2s, estimated_total:1074.1s
+19:20:43 - INFO - [Valid] epoch:  64, MSE:0.00014219, Rel_L2:0.01267714
+19:20:43 - INFO - [Loss_Compare] epoch:64, Train_Data_Loss:0.0000476, Val_MSE:0.0001422, Diff:0.0000946, Ratio:2.985
+19:20:43 - INFO - [Fit_Analysis] epoch:64, Status:GOOD_FIT
+19:20:43 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000476, Val: 0.0001422
+19:20:43 - INFO - [NO_IMPROVEMENT] delta < 0.00000014. Early stop counter: 4/20
+19:20:45 - INFO - [Train] epoch:  65, data_loss:0.00005104, pde_loss:0.00000254, mono_loss:0.00000364, λ_data:1.892027, λ_pde:1.886714, λ_mono:1.886287, σ_data:0.720093, σ_pde:0.721126, σ_mono:0.721209, lr_main:0.009699, lr_F:0.001000, lr_σ:0.000400
+19:20:45 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.15s, training_time:149.4s, estimated_total:1073.3s
+19:20:45 - INFO - [Valid] epoch:  65, MSE:0.00012790, Rel_L2:0.01202329
+19:20:45 - INFO - [Loss_Compare] epoch:65, Train_Data_Loss:0.0000510, Val_MSE:0.0001279, Diff:0.0000769, Ratio:2.506
+19:20:45 - INFO - [Fit_Analysis] epoch:65, Status:GOOD_FIT
+19:20:45 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000510, Val: 0.0001279
+19:20:45 - INFO - [NEW_BEST] Validation MSE: 0.00012790 at epoch 65
+19:20:46 - INFO - [Test] MSE:0.00005828, MAE:0.00623408, MAPE:0.6692%, RMSE:0.00763392, R2:0.97395337, Rel_L2:0.00813637
+19:20:48 - INFO - [Train] epoch:  66, data_loss:0.00004902, pde_loss:0.00000223, mono_loss:0.00000363, λ_data:1.910704, λ_pde:1.905326, λ_mono:1.904895, σ_data:0.716497, σ_pde:0.717527, σ_mono:0.717609, lr_main:0.009688, lr_F:0.001000, lr_σ:0.000400
+19:20:48 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.15s, training_time:151.6s, estimated_total:1072.5s
+19:20:48 - INFO - [Valid] epoch:  66, MSE:0.00012785, Rel_L2:0.01202075
+19:20:48 - INFO - [Loss_Compare] epoch:66, Train_Data_Loss:0.0000490, Val_MSE:0.0001278, Diff:0.0000788, Ratio:2.608
+19:20:48 - INFO - [Fit_Analysis] epoch:66, Status:GOOD_FIT
+19:20:48 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000490, Val: 0.0001278
+19:20:48 - INFO - [NO_IMPROVEMENT] delta < 0.00000013. Early stop counter: 1/20
+19:20:50 - INFO - [Train] epoch:  67, data_loss:0.00004665, pde_loss:0.00000212, mono_loss:0.00000364, λ_data:1.929562, λ_pde:1.924118, λ_mono:1.923683, σ_data:0.712918, σ_pde:0.713946, σ_mono:0.714028, lr_main:0.009677, lr_F:0.001000, lr_σ:0.000400
+19:20:50 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.14s, training_time:153.7s, estimated_total:1071.9s
+19:20:50 - INFO - [Valid] epoch:  67, MSE:0.00013319, Rel_L2:0.01226945
+19:20:50 - INFO - [Loss_Compare] epoch:67, Train_Data_Loss:0.0000466, Val_MSE:0.0001332, Diff:0.0000865, Ratio:2.855
+19:20:50 - INFO - [Fit_Analysis] epoch:67, Status:GOOD_FIT
+19:20:50 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000466, Val: 0.0001332
+19:20:50 - INFO - [NO_IMPROVEMENT] delta < 0.00000013. Early stop counter: 2/20
+19:20:52 - INFO - [Train] epoch:  68, data_loss:0.00004545, pde_loss:0.00000253, mono_loss:0.00000364, λ_data:1.948603, λ_pde:1.943092, λ_mono:1.942652, σ_data:0.709358, σ_pde:0.710383, σ_mono:0.710465, lr_main:0.009666, lr_F:0.001000, lr_σ:0.000400
+19:20:52 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.14s, training_time:155.9s, estimated_total:1071.2s
+19:20:52 - INFO - [Valid] epoch:  68, MSE:0.00013027, Rel_L2:0.01213428
+19:20:52 - INFO - [Loss_Compare] epoch:68, Train_Data_Loss:0.0000454, Val_MSE:0.0001303, Diff:0.0000848, Ratio:2.867
+19:20:52 - INFO - [Fit_Analysis] epoch:68, Status:GOOD_FIT
+19:20:52 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000454, Val: 0.0001303
+19:20:52 - INFO - [NO_IMPROVEMENT] delta < 0.00000013. Early stop counter: 3/20
+19:20:54 - INFO - [Train] epoch:  69, data_loss:0.00004839, pde_loss:0.00000209, mono_loss:0.00000364, λ_data:1.967826, λ_pde:1.962249, λ_mono:1.961805, σ_data:0.705815, σ_pde:0.706838, σ_mono:0.706919, lr_main:0.009654, lr_F:0.001000, lr_σ:0.000400
+19:20:54 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.14s, training_time:158.0s, estimated_total:1070.7s
+19:20:54 - INFO - [Valid] epoch:  69, MSE:0.00013153, Rel_L2:0.01219291
+19:20:54 - INFO - [Loss_Compare] epoch:69, Train_Data_Loss:0.0000484, Val_MSE:0.0001315, Diff:0.0000831, Ratio:2.718
+19:20:54 - INFO - [Fit_Analysis] epoch:69, Status:GOOD_FIT
+19:20:54 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000484, Val: 0.0001315
+19:20:54 - INFO - [NO_IMPROVEMENT] delta < 0.00000013. Early stop counter: 4/20
+19:20:56 - INFO - [Train] epoch:  70, data_loss:0.00004727, pde_loss:0.00000232, mono_loss:0.00000364, λ_data:1.987233, λ_pde:1.981591, λ_mono:1.981140, σ_data:0.702291, σ_pde:0.703310, σ_mono:0.703392, lr_main:0.009642, lr_F:0.001000, lr_σ:0.000400
+19:20:56 - INFO - [Timing] epoch_time:2.13s, avg_epoch_time:2.14s, training_time:160.2s, estimated_total:1070.6s
+19:20:56 - INFO - [Valid] epoch:  70, MSE:0.00012340, Rel_L2:0.01180980
+19:20:56 - INFO - [Loss_Compare] epoch:70, Train_Data_Loss:0.0000473, Val_MSE:0.0001234, Diff:0.0000761, Ratio:2.610
+19:20:56 - INFO - [Fit_Analysis] epoch:70, Status:GOOD_FIT
+19:20:56 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000473, Val: 0.0001234
+19:20:56 - INFO - [NEW_BEST] Validation MSE: 0.00012340 at epoch 70
+19:20:56 - INFO - [Test] MSE:0.00005408, MAE:0.00598574, MAPE:0.6417%, RMSE:0.00735358, R2:0.97583121, Rel_L2:0.00783851
+19:20:59 - INFO - [Train] epoch:  71, data_loss:0.00004718, pde_loss:0.00000246, mono_loss:0.00000362, λ_data:2.006829, λ_pde:2.001120, λ_mono:2.000662, σ_data:0.698784, σ_pde:0.699800, σ_mono:0.699882, lr_main:0.009630, lr_F:0.001000, lr_σ:0.000400
+19:20:59 - INFO - [Timing] epoch_time:2.14s, avg_epoch_time:2.14s, training_time:162.6s, estimated_total:1070.6s
+19:20:59 - INFO - [Valid] epoch:  71, MSE:0.00014024, Rel_L2:0.01258984
+19:20:59 - INFO - [Loss_Compare] epoch:71, Train_Data_Loss:0.0000472, Val_MSE:0.0001402, Diff:0.0000931, Ratio:2.973
+19:20:59 - INFO - [Fit_Analysis] epoch:71, Status:GOOD_FIT
+19:20:59 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000472, Val: 0.0001402
+19:20:59 - INFO - [NO_IMPROVEMENT] delta < 0.00000012. Early stop counter: 1/20
+19:21:01 - INFO - [Train] epoch:  72, data_loss:0.00004597, pde_loss:0.00000233, mono_loss:0.00000362, λ_data:2.026613, λ_pde:2.020836, λ_mono:2.020372, σ_data:0.695294, σ_pde:0.696308, σ_mono:0.696390, lr_main:0.009618, lr_F:0.001000, lr_σ:0.000400
+19:21:01 - INFO - [Timing] epoch_time:2.13s, avg_epoch_time:2.14s, training_time:164.8s, estimated_total:1070.6s
+19:21:01 - INFO - [Valid] epoch:  72, MSE:0.00011872, Rel_L2:0.01158382
+19:21:01 - INFO - [Loss_Compare] epoch:72, Train_Data_Loss:0.0000460, Val_MSE:0.0001187, Diff:0.0000728, Ratio:2.583
+19:21:01 - INFO - [Fit_Analysis] epoch:72, Status:GOOD_FIT
+19:21:01 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000460, Val: 0.0001187
+19:21:01 - INFO - [NEW_BEST] Validation MSE: 0.00011872 at epoch 72
+19:21:01 - INFO - [Test] MSE:0.00005566, MAE:0.00603195, MAPE:0.6460%, RMSE:0.00746027, R2:0.97512484, Rel_L2:0.00796324
+19:21:03 - INFO - [Train] epoch:  73, data_loss:0.00004548, pde_loss:0.00000257, mono_loss:0.00000362, λ_data:2.046586, λ_pde:2.040740, λ_mono:2.040272, σ_data:0.691823, σ_pde:0.692834, σ_mono:0.692915, lr_main:0.009606, lr_F:0.001000, lr_σ:0.000400
+19:21:03 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.14s, training_time:167.1s, estimated_total:1070.0s
+19:21:03 - INFO - [Valid] epoch:  73, MSE:0.00012379, Rel_L2:0.01182862
+19:21:03 - INFO - [Loss_Compare] epoch:73, Train_Data_Loss:0.0000455, Val_MSE:0.0001238, Diff:0.0000783, Ratio:2.722
+19:21:03 - INFO - [Fit_Analysis] epoch:73, Status:GOOD_FIT
+19:21:03 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000455, Val: 0.0001238
+19:21:03 - INFO - [NO_IMPROVEMENT] delta < 0.00000012. Early stop counter: 1/20
+19:21:05 - INFO - [Train] epoch:  74, data_loss:0.00004692, pde_loss:0.00000201, mono_loss:0.00000360, λ_data:2.066751, λ_pde:2.060837, λ_mono:2.060364, σ_data:0.688369, σ_pde:0.689376, σ_mono:0.689457, lr_main:0.009594, lr_F:0.001000, lr_σ:0.000400
+19:21:05 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.14s, training_time:169.2s, estimated_total:1069.4s
+19:21:05 - INFO - [Valid] epoch:  74, MSE:0.00012473, Rel_L2:0.01187324
+19:21:05 - INFO - [Loss_Compare] epoch:74, Train_Data_Loss:0.0000469, Val_MSE:0.0001247, Diff:0.0000778, Ratio:2.658
+19:21:05 - INFO - [Fit_Analysis] epoch:74, Status:GOOD_FIT
+19:21:05 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000469, Val: 0.0001247
+19:21:05 - INFO - [NO_IMPROVEMENT] delta < 0.00000012. Early stop counter: 2/20
+19:21:07 - INFO - [Train] epoch:  75, data_loss:0.00004405, pde_loss:0.00000203, mono_loss:0.00000360, λ_data:2.087110, λ_pde:2.081127, λ_mono:2.080650, σ_data:0.684932, σ_pde:0.685937, σ_mono:0.686017, lr_main:0.009581, lr_F:0.001000, lr_σ:0.000400
+19:21:07 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.14s, training_time:171.3s, estimated_total:1068.7s
+19:21:07 - INFO - [Valid] epoch:  75, MSE:0.00012178, Rel_L2:0.01173218
+19:21:07 - INFO - [Loss_Compare] epoch:75, Train_Data_Loss:0.0000440, Val_MSE:0.0001218, Diff:0.0000777, Ratio:2.765
+19:21:07 - INFO - [Fit_Analysis] epoch:75, Status:GOOD_FIT
+19:21:07 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000440, Val: 0.0001218
+19:21:07 - INFO - [NO_IMPROVEMENT] delta < 0.00000012. Early stop counter: 3/20
+19:21:09 - INFO - [Train] epoch:  76, data_loss:0.00004487, pde_loss:0.00000195, mono_loss:0.00000358, λ_data:2.107666, λ_pde:2.101612, λ_mono:2.101131, σ_data:0.681512, σ_pde:0.682514, σ_mono:0.682594, lr_main:0.009568, lr_F:0.001000, lr_σ:0.000400
+19:21:09 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.14s, training_time:173.4s, estimated_total:1068.1s
+19:21:10 - INFO - [Valid] epoch:  76, MSE:0.00012258, Rel_L2:0.01177041
+19:21:10 - INFO - [Loss_Compare] epoch:76, Train_Data_Loss:0.0000449, Val_MSE:0.0001226, Diff:0.0000777, Ratio:2.732
+19:21:10 - INFO - [Fit_Analysis] epoch:76, Status:GOOD_FIT
+19:21:10 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000449, Val: 0.0001226
+19:21:10 - INFO - [NO_IMPROVEMENT] delta < 0.00000012. Early stop counter: 4/20
+19:21:12 - INFO - [Train] epoch:  77, data_loss:0.00004478, pde_loss:0.00000226, mono_loss:0.00000359, λ_data:2.128419, λ_pde:2.122295, λ_mono:2.121809, σ_data:0.678109, σ_pde:0.679108, σ_mono:0.679188, lr_main:0.009555, lr_F:0.001000, lr_σ:0.000400
+19:21:12 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.14s, training_time:175.6s, estimated_total:1067.7s
+19:21:12 - INFO - [Valid] epoch:  77, MSE:0.00013158, Rel_L2:0.01219499
+19:21:12 - INFO - [Loss_Compare] epoch:77, Train_Data_Loss:0.0000448, Val_MSE:0.0001316, Diff:0.0000868, Ratio:2.938
+19:21:12 - INFO - [Fit_Analysis] epoch:77, Status:GOOD_FIT
+19:21:12 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000448, Val: 0.0001316
+19:21:12 - INFO - [NO_IMPROVEMENT] delta < 0.00000012. Early stop counter: 5/20
+19:21:14 - INFO - [Train] epoch:  78, data_loss:0.00004717, pde_loss:0.00000247, mono_loss:0.00000359, λ_data:2.149370, λ_pde:2.143177, λ_mono:2.142686, σ_data:0.674724, σ_pde:0.675720, σ_mono:0.675799, lr_main:0.009542, lr_F:0.001000, lr_σ:0.000400
+19:21:14 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.13s, training_time:177.7s, estimated_total:1067.2s
+19:21:14 - INFO - [Valid] epoch:  78, MSE:0.00011877, Rel_L2:0.01158643
+19:21:14 - INFO - [Loss_Compare] epoch:78, Train_Data_Loss:0.0000472, Val_MSE:0.0001188, Diff:0.0000716, Ratio:2.518
+19:21:14 - INFO - [Fit_Analysis] epoch:78, Status:GOOD_FIT
+19:21:14 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000472, Val: 0.0001188
+19:21:14 - INFO - [NO_IMPROVEMENT] delta < 0.00000012. Early stop counter: 6/20
+19:21:16 - INFO - [Train] epoch:  79, data_loss:0.00004923, pde_loss:0.00000233, mono_loss:0.00000358, λ_data:2.170522, λ_pde:2.164260, λ_mono:2.163763, σ_data:0.671356, σ_pde:0.672348, σ_mono:0.672427, lr_main:0.009529, lr_F:0.001000, lr_σ:0.000400
+19:21:16 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.13s, training_time:179.9s, estimated_total:1066.6s
+19:21:16 - INFO - [Valid] epoch:  79, MSE:0.00013927, Rel_L2:0.01254632
+19:21:16 - INFO - [Loss_Compare] epoch:79, Train_Data_Loss:0.0000492, Val_MSE:0.0001393, Diff:0.0000900, Ratio:2.829
+19:21:16 - INFO - [Fit_Analysis] epoch:79, Status:GOOD_FIT
+19:21:16 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000492, Val: 0.0001393
+19:21:16 - INFO - [NO_IMPROVEMENT] delta < 0.00000012. Early stop counter: 7/20
+19:21:18 - INFO - [Train] epoch:  80, data_loss:0.00004777, pde_loss:0.00000237, mono_loss:0.00000355, λ_data:2.191877, λ_pde:2.185546, λ_mono:2.185041, σ_data:0.668004, σ_pde:0.668993, σ_mono:0.669072, lr_main:0.009515, lr_F:0.001000, lr_σ:0.000400
+19:21:18 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.13s, training_time:182.0s, estimated_total:1066.1s
+19:21:18 - INFO - [Valid] epoch:  80, MSE:0.00011313, Rel_L2:0.01130788
+19:21:18 - INFO - [Loss_Compare] epoch:80, Train_Data_Loss:0.0000478, Val_MSE:0.0001131, Diff:0.0000654, Ratio:2.368
+19:21:18 - INFO - [Fit_Analysis] epoch:80, Status:GOOD_FIT
+19:21:18 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000478, Val: 0.0001131
+19:21:18 - INFO - [NEW_BEST] Validation MSE: 0.00011313 at epoch 80
+19:21:18 - INFO - [Test] MSE:0.00006252, MAE:0.00638615, MAPE:0.6848%, RMSE:0.00790695, R2:0.97205687, Rel_L2:0.00845209
+19:21:20 - INFO - [Train] epoch:  81, data_loss:0.00004482, pde_loss:0.00000276, mono_loss:0.00000354, λ_data:2.213438, λ_pde:2.207036, λ_mono:2.206524, σ_data:0.664670, σ_pde:0.665655, σ_mono:0.665734, lr_main:0.009502, lr_F:0.001000, lr_σ:0.000400
+19:21:20 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.13s, training_time:184.2s, estimated_total:1065.6s
+19:21:20 - INFO - [Valid] epoch:  81, MSE:0.00012941, Rel_L2:0.01209428
+19:21:20 - INFO - [Loss_Compare] epoch:81, Train_Data_Loss:0.0000448, Val_MSE:0.0001294, Diff:0.0000846, Ratio:2.887
+19:21:20 - INFO - [Fit_Analysis] epoch:81, Status:GOOD_FIT
+19:21:20 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000448, Val: 0.0001294
+19:21:20 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 1/20
+19:21:22 - INFO - [Train] epoch:  82, data_loss:0.00004486, pde_loss:0.00000239, mono_loss:0.00000353, λ_data:2.235206, λ_pde:2.228732, λ_mono:2.228212, σ_data:0.661352, σ_pde:0.662333, σ_mono:0.662412, lr_main:0.009488, lr_F:0.001000, lr_σ:0.000400
+19:21:22 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.13s, training_time:186.4s, estimated_total:1065.1s
+19:21:23 - INFO - [Valid] epoch:  82, MSE:0.00011931, Rel_L2:0.01161243
+19:21:23 - INFO - [Loss_Compare] epoch:82, Train_Data_Loss:0.0000449, Val_MSE:0.0001193, Diff:0.0000744, Ratio:2.659
+19:21:23 - INFO - [Fit_Analysis] epoch:82, Status:GOOD_FIT
+19:21:23 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000449, Val: 0.0001193
+19:21:23 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 2/20
+19:21:25 - INFO - [Train] epoch:  83, data_loss:0.00005007, pde_loss:0.00000260, mono_loss:0.00000350, λ_data:2.257180, λ_pde:2.250634, λ_mono:2.250109, σ_data:0.658051, σ_pde:0.659029, σ_mono:0.659108, lr_main:0.009474, lr_F:0.001000, lr_σ:0.000400
+19:21:25 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.13s, training_time:188.5s, estimated_total:1064.6s
+19:21:25 - INFO - [Valid] epoch:  83, MSE:0.00011911, Rel_L2:0.01160305
+19:21:25 - INFO - [Loss_Compare] epoch:83, Train_Data_Loss:0.0000501, Val_MSE:0.0001191, Diff:0.0000690, Ratio:2.379
+19:21:25 - INFO - [Fit_Analysis] epoch:83, Status:GOOD_FIT
+19:21:25 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000501, Val: 0.0001191
+19:21:25 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 3/20
+19:21:27 - INFO - [Train] epoch:  84, data_loss:0.00004410, pde_loss:0.00000213, mono_loss:0.00000351, λ_data:2.279365, λ_pde:2.272747, λ_mono:2.272217, σ_data:0.654766, σ_pde:0.655741, σ_mono:0.655819, lr_main:0.009459, lr_F:0.001000, lr_σ:0.000400
+19:21:27 - INFO - [Timing] epoch_time:2.03s, avg_epoch_time:2.13s, training_time:190.6s, estimated_total:1064.0s
+19:21:27 - INFO - [Valid] epoch:  84, MSE:0.00010723, Rel_L2:0.01100874
+19:21:27 - INFO - [Loss_Compare] epoch:84, Train_Data_Loss:0.0000441, Val_MSE:0.0001072, Diff:0.0000631, Ratio:2.432
+19:21:27 - INFO - [Fit_Analysis] epoch:84, Status:GOOD_FIT
+19:21:27 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000441, Val: 0.0001072
+19:21:27 - INFO - [NEW_BEST] Validation MSE: 0.00010723 at epoch 84
+19:21:27 - INFO - [Test] MSE:0.00005135, MAE:0.00582757, MAPE:0.6244%, RMSE:0.00716574, R2:0.97705019, Rel_L2:0.00764963
+19:21:29 - INFO - [Train] epoch:  85, data_loss:0.00004254, pde_loss:0.00000213, mono_loss:0.00000349, λ_data:2.301763, λ_pde:2.295071, λ_mono:2.294536, σ_data:0.651498, σ_pde:0.652469, σ_mono:0.652547, lr_main:0.009445, lr_F:0.001000, lr_σ:0.000400
+19:21:29 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.13s, training_time:192.9s, estimated_total:1063.6s
+19:21:29 - INFO - [Valid] epoch:  85, MSE:0.00011366, Rel_L2:0.01133442
+19:21:29 - INFO - [Loss_Compare] epoch:85, Train_Data_Loss:0.0000425, Val_MSE:0.0001137, Diff:0.0000711, Ratio:2.672
+19:21:29 - INFO - [Fit_Analysis] epoch:85, Status:GOOD_FIT
+19:21:29 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000425, Val: 0.0001137
+19:21:29 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 1/20
+19:21:31 - INFO - [Train] epoch:  86, data_loss:0.00004549, pde_loss:0.00000221, mono_loss:0.00000348, λ_data:2.324376, λ_pde:2.317609, λ_mono:2.317069, σ_data:0.648246, σ_pde:0.649214, σ_mono:0.649292, lr_main:0.009430, lr_F:0.001000, lr_σ:0.000400
+19:21:31 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.13s, training_time:195.0s, estimated_total:1063.1s
+19:21:31 - INFO - [Valid] epoch:  86, MSE:0.00012110, Rel_L2:0.01169913
+19:21:31 - INFO - [Loss_Compare] epoch:86, Train_Data_Loss:0.0000455, Val_MSE:0.0001211, Diff:0.0000756, Ratio:2.662
+19:21:31 - INFO - [Fit_Analysis] epoch:86, Status:GOOD_FIT
+19:21:31 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000455, Val: 0.0001211
+19:21:31 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 2/20
+19:21:33 - INFO - [Train] epoch:  87, data_loss:0.00004765, pde_loss:0.00000266, mono_loss:0.00000347, λ_data:2.347205, λ_pde:2.340364, λ_mono:2.339818, σ_data:0.645011, σ_pde:0.645975, σ_mono:0.646052, lr_main:0.009416, lr_F:0.001000, lr_σ:0.000400
+19:21:33 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.13s, training_time:197.1s, estimated_total:1062.6s
+19:21:33 - INFO - [Valid] epoch:  87, MSE:0.00012217, Rel_L2:0.01175094
+19:21:33 - INFO - [Loss_Compare] epoch:87, Train_Data_Loss:0.0000477, Val_MSE:0.0001222, Diff:0.0000745, Ratio:2.564
+19:21:33 - INFO - [Fit_Analysis] epoch:87, Status:GOOD_FIT
+19:21:33 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000477, Val: 0.0001222
+19:21:33 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 3/20
+19:21:35 - INFO - [Train] epoch:  88, data_loss:0.00004454, pde_loss:0.00000247, mono_loss:0.00000345, λ_data:2.370254, λ_pde:2.363336, λ_mono:2.362786, σ_data:0.641791, σ_pde:0.642752, σ_mono:0.642829, lr_main:0.009401, lr_F:0.001000, lr_σ:0.000400
+19:21:35 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.12s, training_time:199.2s, estimated_total:1062.2s
+19:21:35 - INFO - [Valid] epoch:  88, MSE:0.00012884, Rel_L2:0.01206726
+19:21:35 - INFO - [Loss_Compare] epoch:88, Train_Data_Loss:0.0000445, Val_MSE:0.0001288, Diff:0.0000843, Ratio:2.892
+19:21:35 - INFO - [Fit_Analysis] epoch:88, Status:GOOD_FIT
+19:21:35 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000445, Val: 0.0001288
+19:21:35 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 4/20
+19:21:37 - INFO - [Train] epoch:  89, data_loss:0.00004973, pde_loss:0.00000293, mono_loss:0.00000343, λ_data:2.393519, λ_pde:2.386528, λ_mono:2.385973, σ_data:0.638588, σ_pde:0.639546, σ_mono:0.639622, lr_main:0.009385, lr_F:0.001000, lr_σ:0.000400
+19:21:37 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.12s, training_time:201.4s, estimated_total:1061.9s
+19:21:38 - INFO - [Valid] epoch:  89, MSE:0.00013779, Rel_L2:0.01247972
+19:21:38 - INFO - [Loss_Compare] epoch:89, Train_Data_Loss:0.0000497, Val_MSE:0.0001378, Diff:0.0000881, Ratio:2.771
+19:21:38 - INFO - [Fit_Analysis] epoch:89, Status:GOOD_FIT
+19:21:38 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000497, Val: 0.0001378
+19:21:38 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 5/20
+19:21:40 - INFO - [Train] epoch:  90, data_loss:0.00005787, pde_loss:0.00000408, mono_loss:0.00000339, λ_data:2.417006, λ_pde:2.409940, λ_mono:2.409378, σ_data:0.635401, σ_pde:0.636355, σ_mono:0.636431, lr_main:0.009370, lr_F:0.001000, lr_σ:0.000400
+19:21:40 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.12s, training_time:203.5s, estimated_total:1061.4s
+19:21:40 - INFO - [Valid] epoch:  90, MSE:0.00010855, Rel_L2:0.01107665
+19:21:40 - INFO - [Loss_Compare] epoch:90, Train_Data_Loss:0.0000579, Val_MSE:0.0001086, Diff:0.0000507, Ratio:1.876
+19:21:40 - INFO - [Fit_Analysis] epoch:90, Status:GOOD_FIT
+19:21:40 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000579, Val: 0.0001086
+19:21:40 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 6/20
+19:21:42 - INFO - [Train] epoch:  91, data_loss:0.00004405, pde_loss:0.00000317, mono_loss:0.00000337, λ_data:2.440719, λ_pde:2.433578, λ_mono:2.433011, σ_data:0.632230, σ_pde:0.633181, σ_mono:0.633256, lr_main:0.009355, lr_F:0.001000, lr_σ:0.000400
+19:21:42 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.12s, training_time:205.7s, estimated_total:1061.0s
+19:21:42 - INFO - [Valid] epoch:  91, MSE:0.00011644, Rel_L2:0.01147181
+19:21:42 - INFO - [Loss_Compare] epoch:91, Train_Data_Loss:0.0000441, Val_MSE:0.0001164, Diff:0.0000724, Ratio:2.643
+19:21:42 - INFO - [Fit_Analysis] epoch:91, Status:GOOD_FIT
+19:21:42 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000441, Val: 0.0001164
+19:21:42 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 7/20
+19:21:44 - INFO - [Train] epoch:  92, data_loss:0.00004830, pde_loss:0.00000455, mono_loss:0.00000336, λ_data:2.464659, λ_pde:2.457442, λ_mono:2.456869, σ_data:0.629075, σ_pde:0.630022, σ_mono:0.630097, lr_main:0.009339, lr_F:0.001000, lr_σ:0.000400
+19:21:44 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.12s, training_time:207.8s, estimated_total:1060.6s
+19:21:44 - INFO - [Valid] epoch:  92, MSE:0.00011087, Rel_L2:0.01119405
+19:21:44 - INFO - [Loss_Compare] epoch:92, Train_Data_Loss:0.0000483, Val_MSE:0.0001109, Diff:0.0000626, Ratio:2.295
+19:21:44 - INFO - [Fit_Analysis] epoch:92, Status:GOOD_FIT
+19:21:44 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000483, Val: 0.0001109
+19:21:44 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 8/20
+19:21:46 - INFO - [Train] epoch:  93, data_loss:0.00004477, pde_loss:0.00000317, mono_loss:0.00000334, λ_data:2.488827, λ_pde:2.481535, λ_mono:2.480957, σ_data:0.625936, σ_pde:0.626878, σ_mono:0.626953, lr_main:0.009323, lr_F:0.001000, lr_σ:0.000400
+19:21:46 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.12s, training_time:209.9s, estimated_total:1060.2s
+19:21:46 - INFO - [Valid] epoch:  93, MSE:0.00010919, Rel_L2:0.01110939
+19:21:46 - INFO - [Loss_Compare] epoch:93, Train_Data_Loss:0.0000448, Val_MSE:0.0001092, Diff:0.0000644, Ratio:2.439
+19:21:46 - INFO - [Fit_Analysis] epoch:93, Status:GOOD_FIT
+19:21:46 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000448, Val: 0.0001092
+19:21:46 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 9/20
+19:21:48 - INFO - [Train] epoch:  94, data_loss:0.00004442, pde_loss:0.00000222, mono_loss:0.00000333, λ_data:2.513227, λ_pde:2.505857, λ_mono:2.505273, σ_data:0.622812, σ_pde:0.623751, σ_mono:0.623825, lr_main:0.009307, lr_F:0.001000, lr_σ:0.000400
+19:21:48 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.12s, training_time:212.0s, estimated_total:1059.8s
+19:21:48 - INFO - [Valid] epoch:  94, MSE:0.00010976, Rel_L2:0.01113815
+19:21:48 - INFO - [Loss_Compare] epoch:94, Train_Data_Loss:0.0000444, Val_MSE:0.0001098, Diff:0.0000653, Ratio:2.471
+19:21:48 - INFO - [Fit_Analysis] epoch:94, Status:GOOD_FIT
+19:21:48 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000444, Val: 0.0001098
+19:21:48 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 10/20
+19:21:50 - INFO - [Train] epoch:  95, data_loss:0.00004442, pde_loss:0.00000431, mono_loss:0.00000329, λ_data:2.537858, λ_pde:2.530411, λ_mono:2.529821, σ_data:0.619704, σ_pde:0.620639, σ_mono:0.620713, lr_main:0.009291, lr_F:0.001000, lr_σ:0.000400
+19:21:50 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.12s, training_time:214.2s, estimated_total:1059.5s
+19:21:50 - INFO - [Valid] epoch:  95, MSE:0.00013413, Rel_L2:0.01231263
+19:21:50 - INFO - [Loss_Compare] epoch:95, Train_Data_Loss:0.0000444, Val_MSE:0.0001341, Diff:0.0000897, Ratio:3.020
+19:21:50 - INFO - [Fit_Analysis] epoch:95, Status:GOOD_FIT
+19:21:50 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000444, Val: 0.0001341
+19:21:50 - INFO - [NO_IMPROVEMENT] delta < 0.00000011. Early stop counter: 11/20
+19:21:52 - INFO - [Train] epoch:  96, data_loss:0.00004609, pde_loss:0.00000390, mono_loss:0.00000329, λ_data:2.562722, λ_pde:2.555197, λ_mono:2.554600, σ_data:0.616612, σ_pde:0.617543, σ_mono:0.617617, lr_main:0.009274, lr_F:0.001000, lr_σ:0.000400
+19:21:52 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.12s, training_time:216.3s, estimated_total:1059.1s
+19:21:52 - INFO - [Valid] epoch:  96, MSE:0.00010286, Rel_L2:0.01078208
+19:21:52 - INFO - [Loss_Compare] epoch:96, Train_Data_Loss:0.0000461, Val_MSE:0.0001029, Diff:0.0000568, Ratio:2.232
+19:21:52 - INFO - [Fit_Analysis] epoch:96, Status:GOOD_FIT
+19:21:52 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000461, Val: 0.0001029
+19:21:52 - INFO - [NEW_BEST] Validation MSE: 0.00010286 at epoch 96
+19:21:53 - INFO - [Test] MSE:0.00004446, MAE:0.00535566, MAPE:0.5747%, RMSE:0.00666750, R2:0.98013067, Rel_L2:0.00710081
+19:21:55 - INFO - [Train] epoch:  97, data_loss:0.00004304, pde_loss:0.00000262, mono_loss:0.00000330, λ_data:2.587823, λ_pde:2.580220, λ_mono:2.579617, σ_data:0.613535, σ_pde:0.614462, σ_mono:0.614536, lr_main:0.009258, lr_F:0.001000, lr_σ:0.000400
+19:21:55 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.12s, training_time:218.5s, estimated_total:1058.7s
+19:21:55 - INFO - [Valid] epoch:  97, MSE:0.00010397, Rel_L2:0.01084041
+19:21:55 - INFO - [Loss_Compare] epoch:97, Train_Data_Loss:0.0000430, Val_MSE:0.0001040, Diff:0.0000609, Ratio:2.416
+19:21:55 - INFO - [Fit_Analysis] epoch:97, Status:GOOD_FIT
+19:21:55 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000430, Val: 0.0001040
+19:21:55 - INFO - [NO_IMPROVEMENT] delta < 0.00000010. Early stop counter: 1/20
+19:21:57 - INFO - [Train] epoch:  98, data_loss:0.00006123, pde_loss:0.00000401, mono_loss:0.00000327, λ_data:2.613163, λ_pde:2.605481, λ_mono:2.604871, σ_data:0.610474, σ_pde:0.611397, σ_mono:0.611471, lr_main:0.009241, lr_F:0.001000, lr_σ:0.000400
+19:21:57 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.12s, training_time:220.7s, estimated_total:1058.4s
+19:21:57 - INFO - [Valid] epoch:  98, MSE:0.00017923, Rel_L2:0.01423290
+19:21:57 - INFO - [Loss_Compare] epoch:98, Train_Data_Loss:0.0000612, Val_MSE:0.0001792, Diff:0.0001180, Ratio:2.927
+19:21:57 - INFO - [Fit_Analysis] epoch:98, Status:GOOD_FIT
+19:21:57 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000612, Val: 0.0001792
+19:21:57 - INFO - [NO_IMPROVEMENT] delta < 0.00000010. Early stop counter: 2/20
+19:21:59 - INFO - [Train] epoch:  99, data_loss:0.00006794, pde_loss:0.00000395, mono_loss:0.00000317, λ_data:2.638737, λ_pde:2.630977, λ_mono:2.630360, σ_data:0.607428, σ_pde:0.608348, σ_mono:0.608421, lr_main:0.009224, lr_F:0.001000, lr_σ:0.000400
+19:21:59 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.12s, training_time:222.8s, estimated_total:1058.0s
+19:21:59 - INFO - [Valid] epoch:  99, MSE:0.00013834, Rel_L2:0.01250452
+19:21:59 - INFO - [Loss_Compare] epoch:99, Train_Data_Loss:0.0000679, Val_MSE:0.0001383, Diff:0.0000704, Ratio:2.036
+19:21:59 - INFO - [Fit_Analysis] epoch:99, Status:GOOD_FIT
+19:21:59 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000679, Val: 0.0001383
+19:21:59 - INFO - [NO_IMPROVEMENT] delta < 0.00000010. Early stop counter: 3/20
+19:22:01 - INFO - [Train] epoch: 100, data_loss:0.00005269, pde_loss:0.00000343, mono_loss:0.00000318, λ_data:2.664560, λ_pde:2.656719, λ_mono:2.656096, σ_data:0.604398, σ_pde:0.605313, σ_mono:0.605386, lr_main:0.009207, lr_F:0.001000, lr_σ:0.000400
+19:22:01 - INFO - [Timing] epoch_time:2.08s, avg_epoch_time:2.12s, training_time:225.0s, estimated_total:1057.8s
+19:22:01 - INFO - [Valid] epoch: 100, MSE:0.00011872, Rel_L2:0.01158366
+19:22:01 - INFO - [Loss_Compare] epoch:100, Train_Data_Loss:0.0000527, Val_MSE:0.0001187, Diff:0.0000660, Ratio:2.253
+19:22:01 - INFO - [Fit_Analysis] epoch:100, Status:GOOD_FIT
+19:22:01 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000527, Val: 0.0001187
+19:22:01 - INFO - [NO_IMPROVEMENT] delta < 0.00000010. Early stop counter: 4/20
+19:22:03 - INFO - [Train] epoch: 101, data_loss:0.00004509, pde_loss:0.00000260, mono_loss:0.00000323, λ_data:2.690631, λ_pde:2.682708, λ_mono:2.682079, σ_data:0.601382, σ_pde:0.602294, σ_mono:0.602366, lr_main:0.009190, lr_F:0.001000, lr_σ:0.000400
+19:22:03 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.12s, training_time:227.1s, estimated_total:1057.5s
+19:22:03 - INFO - [Valid] epoch: 101, MSE:0.00010371, Rel_L2:0.01082699
+19:22:03 - INFO - [Loss_Compare] epoch:101, Train_Data_Loss:0.0000451, Val_MSE:0.0001037, Diff:0.0000586, Ratio:2.300
+19:22:03 - INFO - [Fit_Analysis] epoch:101, Status:GOOD_FIT
+19:22:03 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000451, Val: 0.0001037
+19:22:03 - INFO - [NO_IMPROVEMENT] delta < 0.00000010. Early stop counter: 5/20
+19:22:05 - INFO - [Train] epoch: 102, data_loss:0.00004499, pde_loss:0.00000278, mono_loss:0.00000323, λ_data:2.716950, λ_pde:2.708943, λ_mono:2.708308, σ_data:0.598381, σ_pde:0.599289, σ_mono:0.599361, lr_main:0.009173, lr_F:0.001000, lr_σ:0.000400
+19:22:05 - INFO - [Timing] epoch_time:2.09s, avg_epoch_time:2.11s, training_time:229.3s, estimated_total:1057.4s
+19:22:05 - INFO - [Valid] epoch: 102, MSE:0.00009725, Rel_L2:0.01048437
+19:22:05 - INFO - [Loss_Compare] epoch:102, Train_Data_Loss:0.0000450, Val_MSE:0.0000973, Diff:0.0000523, Ratio:2.161
+19:22:05 - INFO - [Fit_Analysis] epoch:102, Status:GOOD_FIT
+19:22:05 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000450, Val: 0.0000973
+19:22:05 - INFO - [NEW_BEST] Validation MSE: 0.00009725 at epoch 102
+19:22:06 - INFO - [Test] MSE:0.00004721, MAE:0.00547072, MAPE:0.5870%, RMSE:0.00687067, R2:0.97890133, Rel_L2:0.00732177
+19:22:08 - INFO - [Train] epoch: 103, data_loss:0.00004984, pde_loss:0.00000217, mono_loss:0.00000320, λ_data:2.743518, λ_pde:2.735428, λ_mono:2.734787, σ_data:0.595395, σ_pde:0.596300, σ_mono:0.596372, lr_main:0.009155, lr_F:0.001000, lr_σ:0.000400
+19:22:08 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.11s, training_time:231.5s, estimated_total:1057.1s
+19:22:08 - INFO - [Valid] epoch: 103, MSE:0.00009888, Rel_L2:0.01057184
+19:22:08 - INFO - [Loss_Compare] epoch:103, Train_Data_Loss:0.0000498, Val_MSE:0.0000989, Diff:0.0000490, Ratio:1.984
+19:22:08 - INFO - [Fit_Analysis] epoch:103, Status:GOOD_FIT
+19:22:08 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000498, Val: 0.0000989
+19:22:08 - INFO - [NO_IMPROVEMENT] delta < 0.00000010. Early stop counter: 1/20
+19:22:10 - INFO - [Train] epoch: 104, data_loss:0.00004211, pde_loss:0.00000225, mono_loss:0.00000318, λ_data:2.770339, λ_pde:2.762165, λ_mono:2.761518, σ_data:0.592424, σ_pde:0.593325, σ_mono:0.593397, lr_main:0.009137, lr_F:0.001000, lr_σ:0.000400
+19:22:10 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.11s, training_time:233.7s, estimated_total:1056.8s
+19:22:10 - INFO - [Valid] epoch: 104, MSE:0.00010616, Rel_L2:0.01095379
+19:22:10 - INFO - [Loss_Compare] epoch:104, Train_Data_Loss:0.0000421, Val_MSE:0.0001062, Diff:0.0000641, Ratio:2.521
+19:22:10 - INFO - [Fit_Analysis] epoch:104, Status:GOOD_FIT
+19:22:10 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000421, Val: 0.0001062
+19:22:10 - INFO - [NO_IMPROVEMENT] delta < 0.00000010. Early stop counter: 2/20
+19:22:12 - INFO - [Train] epoch: 105, data_loss:0.00005008, pde_loss:0.00000289, mono_loss:0.00000322, λ_data:2.797414, λ_pde:2.789155, λ_mono:2.788502, σ_data:0.589468, σ_pde:0.590366, σ_mono:0.590437, lr_main:0.009120, lr_F:0.001000, lr_σ:0.000400
+19:22:12 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.11s, training_time:235.8s, estimated_total:1056.5s
+19:22:12 - INFO - [Valid] epoch: 105, MSE:0.00011493, Rel_L2:0.01139732
+19:22:12 - INFO - [Loss_Compare] epoch:105, Train_Data_Loss:0.0000501, Val_MSE:0.0001149, Diff:0.0000649, Ratio:2.295
+19:22:12 - INFO - [Fit_Analysis] epoch:105, Status:GOOD_FIT
+19:22:12 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000501, Val: 0.0001149
+19:22:12 - INFO - [NO_IMPROVEMENT] delta < 0.00000010. Early stop counter: 3/20
+19:22:14 - INFO - [Train] epoch: 106, data_loss:0.00006516, pde_loss:0.00000314, mono_loss:0.00000308, λ_data:2.824739, λ_pde:2.816396, λ_mono:2.815737, σ_data:0.586528, σ_pde:0.587421, σ_mono:0.587492, lr_main:0.009102, lr_F:0.001000, lr_σ:0.000400
+19:22:14 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.11s, training_time:237.9s, estimated_total:1056.2s
+19:22:14 - INFO - [Valid] epoch: 106, MSE:0.00012301, Rel_L2:0.01179142
+19:22:14 - INFO - [Loss_Compare] epoch:106, Train_Data_Loss:0.0000652, Val_MSE:0.0001230, Diff:0.0000579, Ratio:1.888
+19:22:14 - INFO - [Fit_Analysis] epoch:106, Status:GOOD_FIT
+19:22:14 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000652, Val: 0.0001230
+19:22:14 - INFO - [NO_IMPROVEMENT] delta < 0.00000010. Early stop counter: 4/20
+19:22:16 - INFO - [Train] epoch: 107, data_loss:0.00004990, pde_loss:0.00000403, mono_loss:0.00000312, λ_data:2.852322, λ_pde:2.843899, λ_mono:2.843233, σ_data:0.583602, σ_pde:0.584491, σ_mono:0.584562, lr_main:0.009083, lr_F:0.001000, lr_σ:0.000400
+19:22:16 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.11s, training_time:240.1s, estimated_total:1055.9s
+19:22:16 - INFO - [Valid] epoch: 107, MSE:0.00010679, Rel_L2:0.01098622
+19:22:16 - INFO - [Loss_Compare] epoch:107, Train_Data_Loss:0.0000499, Val_MSE:0.0001068, Diff:0.0000569, Ratio:2.140
+19:22:16 - INFO - [Fit_Analysis] epoch:107, Status:GOOD_FIT
+19:22:16 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000499, Val: 0.0001068
+19:22:16 - INFO - [NO_IMPROVEMENT] delta < 0.00000010. Early stop counter: 5/20
+19:22:18 - INFO - [Train] epoch: 108, data_loss:0.00004584, pde_loss:0.00000240, mono_loss:0.00000317, λ_data:2.880173, λ_pde:2.871665, λ_mono:2.870992, σ_data:0.580690, σ_pde:0.581576, σ_mono:0.581646, lr_main:0.009065, lr_F:0.001000, lr_σ:0.000400
+19:22:18 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.11s, training_time:242.2s, estimated_total:1055.6s
+19:22:18 - INFO - [Valid] epoch: 108, MSE:0.00009367, Rel_L2:0.01028913
+19:22:18 - INFO - [Loss_Compare] epoch:108, Train_Data_Loss:0.0000458, Val_MSE:0.0000937, Diff:0.0000478, Ratio:2.043
+19:22:18 - INFO - [Fit_Analysis] epoch:108, Status:GOOD_FIT
+19:22:18 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000458, Val: 0.0000937
+19:22:18 - INFO - [NEW_BEST] Validation MSE: 0.00009367 at epoch 108
+19:22:18 - INFO - [Test] MSE:0.00005340, MAE:0.00570581, MAPE:0.6130%, RMSE:0.00730784, R2:0.97613096, Rel_L2:0.00780762
+19:22:20 - INFO - [Train] epoch: 109, data_loss:0.00004188, pde_loss:0.00000291, mono_loss:0.00000316, λ_data:2.908291, λ_pde:2.899693, λ_mono:2.899014, σ_data:0.577793, σ_pde:0.578674, σ_mono:0.578744, lr_main:0.009046, lr_F:0.001000, lr_σ:0.000400
+19:22:20 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.11s, training_time:244.4s, estimated_total:1055.3s
+19:22:21 - INFO - [Valid] epoch: 109, MSE:0.00009891, Rel_L2:0.01057333
+19:22:21 - INFO - [Loss_Compare] epoch:109, Train_Data_Loss:0.0000419, Val_MSE:0.0000989, Diff:0.0000570, Ratio:2.362
+19:22:21 - INFO - [Fit_Analysis] epoch:109, Status:GOOD_FIT
+19:22:21 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000419, Val: 0.0000989
+19:22:21 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 1/20
+19:22:23 - INFO - [Train] epoch: 110, data_loss:0.00005770, pde_loss:0.00000380, mono_loss:0.00000311, λ_data:2.936668, λ_pde:2.927983, λ_mono:2.927298, σ_data:0.574910, σ_pde:0.575788, σ_mono:0.575858, lr_main:0.009028, lr_F:0.001000, lr_σ:0.000400
+19:22:23 - INFO - [Timing] epoch_time:2.07s, avg_epoch_time:2.11s, training_time:246.6s, estimated_total:1055.1s
+19:22:23 - INFO - [Valid] epoch: 110, MSE:0.00010616, Rel_L2:0.01095374
+19:22:23 - INFO - [Loss_Compare] epoch:110, Train_Data_Loss:0.0000577, Val_MSE:0.0001062, Diff:0.0000485, Ratio:1.840
+19:22:23 - INFO - [Fit_Analysis] epoch:110, Status:GOOD_FIT
+19:22:23 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000577, Val: 0.0001062
+19:22:23 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 2/20
+19:22:25 - INFO - [Train] epoch: 111, data_loss:0.00004919, pde_loss:0.00000474, mono_loss:0.00000306, λ_data:2.965312, λ_pde:2.956545, λ_mono:2.955853, σ_data:0.572043, σ_pde:0.572916, σ_mono:0.572985, lr_main:0.009009, lr_F:0.001000, lr_σ:0.000400
+19:22:25 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.11s, training_time:248.7s, estimated_total:1054.8s
+19:22:25 - INFO - [Valid] epoch: 111, MSE:0.00010876, Rel_L2:0.01108702
+19:22:25 - INFO - [Loss_Compare] epoch:111, Train_Data_Loss:0.0000492, Val_MSE:0.0001088, Diff:0.0000596, Ratio:2.211
+19:22:25 - INFO - [Fit_Analysis] epoch:111, Status:GOOD_FIT
+19:22:25 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000492, Val: 0.0001088
+19:22:25 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 3/20
+19:22:27 - INFO - [Train] epoch: 112, data_loss:0.00004728, pde_loss:0.00000332, mono_loss:0.00000313, λ_data:2.994226, λ_pde:2.985376, λ_mono:2.984678, σ_data:0.569189, σ_pde:0.570058, σ_mono:0.570127, lr_main:0.008990, lr_F:0.001000, lr_σ:0.000400
+19:22:27 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.11s, training_time:250.8s, estimated_total:1054.6s
+19:22:27 - INFO - [Valid] epoch: 112, MSE:0.00011878, Rel_L2:0.01158682
+19:22:27 - INFO - [Loss_Compare] epoch:112, Train_Data_Loss:0.0000473, Val_MSE:0.0001188, Diff:0.0000715, Ratio:2.512
+19:22:27 - INFO - [Fit_Analysis] epoch:112, Status:GOOD_FIT
+19:22:27 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000473, Val: 0.0001188
+19:22:27 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 4/20
+19:22:29 - INFO - [Train] epoch: 113, data_loss:0.00007876, pde_loss:0.00000269, mono_loss:0.00000299, λ_data:3.023408, λ_pde:3.014471, λ_mono:3.013766, σ_data:0.566350, σ_pde:0.567215, σ_mono:0.567284, lr_main:0.008971, lr_F:0.001000, lr_σ:0.000400
+19:22:29 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.11s, training_time:253.0s, estimated_total:1054.3s
+19:22:29 - INFO - [Valid] epoch: 113, MSE:0.00012790, Rel_L2:0.01202351
+19:22:29 - INFO - [Loss_Compare] epoch:113, Train_Data_Loss:0.0000788, Val_MSE:0.0001279, Diff:0.0000491, Ratio:1.624
+19:22:29 - INFO - [Fit_Analysis] epoch:113, Status:GOOD_FIT
+19:22:29 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000788, Val: 0.0001279
+19:22:29 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 5/20
+19:22:31 - INFO - [Train] epoch: 114, data_loss:0.00007529, pde_loss:0.00000529, mono_loss:0.00000298, λ_data:3.052860, λ_pde:3.043836, λ_mono:3.043125, σ_data:0.563526, σ_pde:0.564387, σ_mono:0.564455, lr_main:0.008951, lr_F:0.001000, lr_σ:0.000400
+19:22:31 - INFO - [Timing] epoch_time:2.03s, avg_epoch_time:2.11s, training_time:255.1s, estimated_total:1053.9s
+19:22:31 - INFO - [Valid] epoch: 114, MSE:0.00017062, Rel_L2:0.01388678
+19:22:31 - INFO - [Loss_Compare] epoch:114, Train_Data_Loss:0.0000753, Val_MSE:0.0001706, Diff:0.0000953, Ratio:2.266
+19:22:31 - INFO - [Fit_Analysis] epoch:114, Status:GOOD_FIT
+19:22:31 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000753, Val: 0.0001706
+19:22:31 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 6/20
+19:22:33 - INFO - [Train] epoch: 115, data_loss:0.00005981, pde_loss:0.00000955, mono_loss:0.00000306, λ_data:3.082594, λ_pde:3.073483, λ_mono:3.072765, σ_data:0.560716, σ_pde:0.561573, σ_mono:0.561640, lr_main:0.008932, lr_F:0.001000, lr_σ:0.000400
+19:22:33 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.11s, training_time:257.2s, estimated_total:1053.7s
+19:22:33 - INFO - [Valid] epoch: 115, MSE:0.00011078, Rel_L2:0.01118997
+19:22:33 - INFO - [Loss_Compare] epoch:115, Train_Data_Loss:0.0000598, Val_MSE:0.0001108, Diff:0.0000510, Ratio:1.852
+19:22:33 - INFO - [Fit_Analysis] epoch:115, Status:GOOD_FIT
+19:22:33 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000598, Val: 0.0001108
+19:22:33 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 7/20
+19:22:35 - INFO - [Train] epoch: 116, data_loss:0.00004984, pde_loss:0.00000877, mono_loss:0.00000308, λ_data:3.112616, λ_pde:3.103410, λ_mono:3.102687, σ_data:0.557919, σ_pde:0.558772, σ_mono:0.558839, lr_main:0.008912, lr_F:0.001000, lr_σ:0.000400
+19:22:35 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.11s, training_time:259.3s, estimated_total:1053.5s
+19:22:35 - INFO - [Valid] epoch: 116, MSE:0.00011044, Rel_L2:0.01117240
+19:22:35 - INFO - [Loss_Compare] epoch:116, Train_Data_Loss:0.0000498, Val_MSE:0.0001104, Diff:0.0000606, Ratio:2.216
+19:22:35 - INFO - [Fit_Analysis] epoch:116, Status:GOOD_FIT
+19:22:35 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000498, Val: 0.0001104
+19:22:35 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 8/20
+19:22:38 - INFO - [Train] epoch: 117, data_loss:0.00005236, pde_loss:0.00000524, mono_loss:0.00000309, λ_data:3.142920, λ_pde:3.133625, λ_mono:3.132894, σ_data:0.555136, σ_pde:0.555985, σ_mono:0.556052, lr_main:0.008892, lr_F:0.001000, lr_σ:0.000400
+19:22:38 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.11s, training_time:261.5s, estimated_total:1053.2s
+19:22:38 - INFO - [Valid] epoch: 117, MSE:0.00011979, Rel_L2:0.01163568
+19:22:38 - INFO - [Loss_Compare] epoch:117, Train_Data_Loss:0.0000524, Val_MSE:0.0001198, Diff:0.0000674, Ratio:2.288
+19:22:38 - INFO - [Fit_Analysis] epoch:117, Status:GOOD_FIT
+19:22:38 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000524, Val: 0.0001198
+19:22:38 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 9/20
+19:22:40 - INFO - [Train] epoch: 118, data_loss:0.00004518, pde_loss:0.00000590, mono_loss:0.00000304, λ_data:3.173509, λ_pde:3.164124, λ_mono:3.163387, σ_data:0.552366, σ_pde:0.553212, σ_mono:0.553278, lr_main:0.008872, lr_F:0.001000, lr_σ:0.000400
+19:22:40 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.11s, training_time:263.6s, estimated_total:1053.0s
+19:22:40 - INFO - [Valid] epoch: 118, MSE:0.00010566, Rel_L2:0.01092809
+19:22:40 - INFO - [Loss_Compare] epoch:118, Train_Data_Loss:0.0000452, Val_MSE:0.0001057, Diff:0.0000605, Ratio:2.339
+19:22:40 - INFO - [Fit_Analysis] epoch:118, Status:GOOD_FIT
+19:22:40 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000452, Val: 0.0001057
+19:22:40 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 10/20
+19:22:42 - INFO - [Train] epoch: 119, data_loss:0.00005502, pde_loss:0.00001127, mono_loss:0.00000312, λ_data:3.204384, λ_pde:3.194908, λ_mono:3.194165, σ_data:0.549611, σ_pde:0.550453, σ_mono:0.550519, lr_main:0.008852, lr_F:0.001000, lr_σ:0.000400
+19:22:42 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.11s, training_time:265.7s, estimated_total:1052.8s
+19:22:42 - INFO - [Valid] epoch: 119, MSE:0.00017565, Rel_L2:0.01409015
+19:22:42 - INFO - [Loss_Compare] epoch:119, Train_Data_Loss:0.0000550, Val_MSE:0.0001757, Diff:0.0001206, Ratio:3.193
+19:22:42 - INFO - [Fit_Analysis] epoch:119, Status:GOOD_FIT
+19:22:42 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000550, Val: 0.0001757
+19:22:42 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 11/20
+19:22:44 - INFO - [Train] epoch: 120, data_loss:0.00005891, pde_loss:0.00000639, mono_loss:0.00000301, λ_data:3.235545, λ_pde:3.225975, λ_mono:3.225225, σ_data:0.546870, σ_pde:0.547708, σ_mono:0.547774, lr_main:0.008832, lr_F:0.001000, lr_σ:0.000400
+19:22:44 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.10s, training_time:267.9s, estimated_total:1052.5s
+19:22:44 - INFO - [Valid] epoch: 120, MSE:0.00013413, Rel_L2:0.01231261
+19:22:44 - INFO - [Loss_Compare] epoch:120, Train_Data_Loss:0.0000589, Val_MSE:0.0001341, Diff:0.0000752, Ratio:2.277
+19:22:44 - INFO - [Fit_Analysis] epoch:120, Status:GOOD_FIT
+19:22:44 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000589, Val: 0.0001341
+19:22:44 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 12/20
+19:22:46 - INFO - [Train] epoch: 121, data_loss:0.00004855, pde_loss:0.00000207, mono_loss:0.00000309, λ_data:3.267006, λ_pde:3.257344, λ_mono:3.256586, σ_data:0.544142, σ_pde:0.544976, σ_mono:0.545041, lr_main:0.008811, lr_F:0.001000, lr_σ:0.000400
+19:22:46 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.10s, training_time:270.0s, estimated_total:1052.2s
+19:22:46 - INFO - [Valid] epoch: 121, MSE:0.00010617, Rel_L2:0.01095438
+19:22:46 - INFO - [Loss_Compare] epoch:121, Train_Data_Loss:0.0000485, Val_MSE:0.0001062, Diff:0.0000576, Ratio:2.187
+19:22:46 - INFO - [Fit_Analysis] epoch:121, Status:GOOD_FIT
+19:22:46 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000485, Val: 0.0001062
+19:22:46 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 13/20
+19:22:48 - INFO - [Train] epoch: 122, data_loss:0.00004598, pde_loss:0.00000240, mono_loss:0.00000308, λ_data:3.298762, λ_pde:3.289010, λ_mono:3.288245, σ_data:0.541428, σ_pde:0.542257, σ_mono:0.542322, lr_main:0.008791, lr_F:0.001000, lr_σ:0.000400
+19:22:48 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.10s, training_time:272.1s, estimated_total:1052.0s
+19:22:48 - INFO - [Valid] epoch: 122, MSE:0.00012049, Rel_L2:0.01166978
+19:22:48 - INFO - [Loss_Compare] epoch:122, Train_Data_Loss:0.0000460, Val_MSE:0.0001205, Diff:0.0000745, Ratio:2.620
+19:22:48 - INFO - [Fit_Analysis] epoch:122, Status:GOOD_FIT
+19:22:48 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000460, Val: 0.0001205
+19:22:48 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 14/20
+19:22:50 - INFO - [Train] epoch: 123, data_loss:0.00005388, pde_loss:0.00000349, mono_loss:0.00000304, λ_data:3.330816, λ_pde:3.320972, λ_mono:3.320200, σ_data:0.538727, σ_pde:0.539552, σ_mono:0.539617, lr_main:0.008770, lr_F:0.001000, lr_σ:0.000400
+19:22:50 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.10s, training_time:274.3s, estimated_total:1051.8s
+19:22:50 - INFO - [Valid] epoch: 123, MSE:0.00010957, Rel_L2:0.01112863
+19:22:50 - INFO - [Loss_Compare] epoch:123, Train_Data_Loss:0.0000539, Val_MSE:0.0001096, Diff:0.0000557, Ratio:2.034
+19:22:50 - INFO - [Fit_Analysis] epoch:123, Status:GOOD_FIT
+19:22:50 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000539, Val: 0.0001096
+19:22:50 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 15/20
+19:22:52 - INFO - [Train] epoch: 124, data_loss:0.00007245, pde_loss:0.00000475, mono_loss:0.00000299, λ_data:3.363161, λ_pde:3.353223, λ_mono:3.352443, σ_data:0.536040, σ_pde:0.536862, σ_mono:0.536926, lr_main:0.008749, lr_F:0.001000, lr_σ:0.000400
+19:22:52 - INFO - [Timing] epoch_time:2.04s, avg_epoch_time:2.10s, training_time:276.4s, estimated_total:1051.6s
+19:22:53 - INFO - [Valid] epoch: 124, MSE:0.00023900, Rel_L2:0.01643560
+19:22:53 - INFO - [Loss_Compare] epoch:124, Train_Data_Loss:0.0000725, Val_MSE:0.0002390, Diff:0.0001665, Ratio:3.299
+19:22:53 - INFO - [Fit_Analysis] epoch:124, Status:GOOD_FIT
+19:22:53 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000725, Val: 0.0002390
+19:22:53 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 16/20
+19:22:55 - INFO - [Train] epoch: 125, data_loss:0.00007658, pde_loss:0.00000290, mono_loss:0.00000301, λ_data:3.395801, λ_pde:3.385770, λ_mono:3.384983, σ_data:0.533368, σ_pde:0.534185, σ_mono:0.534249, lr_main:0.008728, lr_F:0.001000, lr_σ:0.000400
+19:22:55 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.10s, training_time:278.5s, estimated_total:1051.3s
+19:22:55 - INFO - [Valid] epoch: 125, MSE:0.00010409, Rel_L2:0.01084635
+19:22:55 - INFO - [Loss_Compare] epoch:125, Train_Data_Loss:0.0000766, Val_MSE:0.0001041, Diff:0.0000275, Ratio:1.359
+19:22:55 - INFO - [Fit_Analysis] epoch:125, Status:GOOD_FIT
+19:22:55 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000766, Val: 0.0001041
+19:22:55 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 17/20
+19:22:57 - INFO - [Train] epoch: 126, data_loss:0.00005397, pde_loss:0.00000269, mono_loss:0.00000308, λ_data:3.428759, λ_pde:3.418630, λ_mono:3.417835, σ_data:0.530708, σ_pde:0.531521, σ_mono:0.531585, lr_main:0.008707, lr_F:0.001000, lr_σ:0.000400
+19:22:57 - INFO - [Timing] epoch_time:2.05s, avg_epoch_time:2.10s, training_time:280.6s, estimated_total:1051.1s
+19:22:57 - INFO - [Valid] epoch: 126, MSE:0.00011169, Rel_L2:0.01123553
+19:22:57 - INFO - [Loss_Compare] epoch:126, Train_Data_Loss:0.0000540, Val_MSE:0.0001117, Diff:0.0000577, Ratio:2.070
+19:22:57 - INFO - [Fit_Analysis] epoch:126, Status:GOOD_FIT
+19:22:57 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000540, Val: 0.0001117
+19:22:57 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 18/20
+19:22:59 - INFO - [Train] epoch: 127, data_loss:0.00004684, pde_loss:0.00000260, mono_loss:0.00000301, λ_data:3.462031, λ_pde:3.451804, λ_mono:3.451001, σ_data:0.528060, σ_pde:0.528870, σ_mono:0.528934, lr_main:0.008686, lr_F:0.001000, lr_σ:0.000400
+19:22:59 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.10s, training_time:282.8s, estimated_total:1050.9s
+19:22:59 - INFO - [Valid] epoch: 127, MSE:0.00009372, Rel_L2:0.01029224
+19:22:59 - INFO - [Loss_Compare] epoch:127, Train_Data_Loss:0.0000468, Val_MSE:0.0000937, Diff:0.0000469, Ratio:2.001
+19:22:59 - INFO - [Fit_Analysis] epoch:127, Status:GOOD_FIT
+19:22:59 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000468, Val: 0.0000937
+19:22:59 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 19/20
+19:23:01 - INFO - [Train] epoch: 128, data_loss:0.00005048, pde_loss:0.00000243, mono_loss:0.00000305, λ_data:3.495613, λ_pde:3.485289, λ_mono:3.484478, σ_data:0.525426, σ_pde:0.526232, σ_mono:0.526296, lr_main:0.008664, lr_F:0.001000, lr_σ:0.000400
+19:23:01 - INFO - [Timing] epoch_time:2.06s, avg_epoch_time:2.10s, training_time:284.9s, estimated_total:1050.8s
+19:23:01 - INFO - [Valid] epoch: 128, MSE:0.00013895, Rel_L2:0.01253173
+19:23:01 - INFO - [Loss_Compare] epoch:128, Train_Data_Loss:0.0000505, Val_MSE:0.0001389, Diff:0.0000885, Ratio:2.752
+19:23:01 - INFO - [Fit_Analysis] epoch:128, Status:GOOD_FIT
+19:23:01 - INFO - [GOOD_FIT] Losses converging well | Train: 0.0000505, Val: 0.0001389
+19:23:01 - INFO - [NO_IMPROVEMENT] delta < 0.00000009. Early stop counter: 20/20
+19:23:01 - INFO - [EARLY_STOP] Stopping at epoch 128 after 20 epochs without improvement (patience=20)
+19:23:01 - INFO - [RESTORE_BEST] Loading best model from epoch 108...
+19:23:01 - INFO - [RESTORE_BEST] Best model fully restored (networks + sigma params). σ_data=0.58069, σ_pde=0.58158, σ_mono=0.58165
+19:23:01 - INFO - 
+================================================================================
+19:23:01 - INFO - TRAINING COMPLETED — IAW-PI-EKAN  |  Best Model at Epoch 108
+19:23:01 - INFO - ================================================================================
+19:23:01 - INFO - MSE            : 0.00005340
+19:23:01 - INFO - MAE            : 0.00570581
+19:23:01 - INFO - MAPE           : 0.6130%
+19:23:01 - INFO - RMSE           : 0.00730784
+19:23:01 - INFO - R²             : 0.97613096
+19:23:01 - INFO - Relative L2    : 0.00780762
+19:23:01 - INFO - Model Status   : GOOD_FIT
+19:23:01 - INFO - 
+ADAPTIVE LOSS WEIGHTS (IAW-PINN):
+19:23:01 - INFO -   Upper bound γ : 100.0
+19:23:01 - INFO -   Final λ_data  : 2.880173
+19:23:01 - INFO -   Final λ_PDE   : 2.871665
+19:23:01 - INFO -   Final λ_mono  : 2.870992
+19:23:01 - INFO -   Final σ_data  : 0.580690
+19:23:01 - INFO -   Final σ_PDE   : 0.581576
+19:23:01 - INFO -   Final σ_mono  : 0.581646
+19:23:01 - INFO - 
+FINAL LOSS COMPONENTS:
+19:23:01 - INFO -   Data Loss        : 0.000050
+19:23:01 - INFO -   PDE Loss         : 0.000002
+19:23:01 - INFO -   Monotonicity Loss: 0.000003
+19:23:01 - INFO - 
+COMPUTATIONAL PERFORMANCE:
+19:23:01 - INFO -   Total Training Time  : 285.3s (4.8min)
+19:23:01 - INFO -   Average Epoch Time   : 2.10s
+19:23:01 - INFO -   Total Epochs Trained : 128
+19:23:01 - INFO - 
+MEMORY USAGE:
+19:23:01 - INFO -   CPU — Avg: 0.31GB, Peak: 0.31GB
+19:23:01 - INFO - 
+INFERENCE PERFORMANCE (solution_u only):
+19:23:01 - INFO -   Inference speed: 18.783 ms per 1000 samples
+19:23:01 - INFO -   Avg forward pass: 4.808 ms
+19:23:01 - INFO - ================================================================================
+

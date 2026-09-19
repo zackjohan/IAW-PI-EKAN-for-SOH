@@ -1,0 +1,27 @@
+DATASET: NA-ion (PKL)
+NOMINAL_CAPACITY_Ah: 1.0
+SOC_INTERVAL_WIDTH: 1.0
+AMBIENT_TEMP_KELVIN: 298.15
+CAPACITY SOURCE: max(discharge_capacity_in_Ah) per cycle
+SOC TYPE: charge segment only (I > 0), soc = (Qc_rel / denom) * 100
+PS-BO LABEL: SOH = Qd / (nominal * SOC_interval_width)
+EXTRACTION RANGE: cycles 1..cycle_life-1 (original convention)
+NOTE: BV_Driver_T and Heating_I2 removed (7 SOC features only)
+REFERENCE: NA-ion_270040-8-8-13
+AGING CYCLES EXTRACTED: 239
+BEST LOWER SOC: 15
+BEST UPPER SOC: 68
+BEST SCORE (mean |r|): 0.92445284
+COVERAGE: 100.0000%
+FEATURES: ['ChargingTime', 'VoltageSlope', 'VoltageStd', 'VoltageKurtosis', 'VoltageSkewness', 'VoltageEntropy', 'VoltageCurvature']  (7 SOC features only)
+r_by_feature (SOH labels):
+  ChargingTime: 0.99641356
+  VoltageSlope: -0.95988506
+  VoltageStd: -0.74599478
+  VoltageKurtosis: 0.95836184
+  VoltageSkewness: 0.98051754
+  VoltageEntropy: 0.87893112
+  VoltageCurvature: 0.95106594
+
+analysis:
+  search_time_sec: 64.44460259999323
