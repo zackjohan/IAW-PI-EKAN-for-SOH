@@ -165,4 +165,16 @@ See the module READMEs and runner docstrings for protocol details. Sequence mode
 
 Please cite the associated PI-EKAN work and the original dataset publications when using this repository.
 
-<!-- Insert the verified PI-EKAN BibTeX entry here when the paper details are available. -->
+**PI-EKAN paper:** Z. Yohannes, Y. Xu, Y. Wei, J. Li, B. Jia, "Cross-chemistry battery state-of-health estimation from adaptive partial charging using interpretable physics-informed Efficient Kolmogorov–Arnold networks," *Energy and AI*, 2026, 100928. https://doi.org/10.1016/j.egyai.2026.100928
+
+```bibtex
+@article{yohannes2026piekan,
+  author  = {Yohannes, Zekariyas and Xu, Yonghong and Wei, Yidi and Li, Jian and Jia, Boru},
+  title   = {Cross-chemistry battery state-of-health estimation from adaptive partial charging using interpretable physics-informed Efficient {Kolmogorov--Arnold} networks},
+  journal = {Energy and AI},
+  year    = {2026},
+  pages   = {100928},
+  doi     = {10.1016/j.egyai.2026.100928},
+  url     = {https://doi.org/10.1016/j.egyai.2026.100928},
+}
+```
