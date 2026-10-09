@@ -3,9 +3,9 @@
 Research code for battery state-of-health estimation using PI-EKAN, including PS-BO SOC-window selection, feature extraction, seven comparison models, ablation studies, and single-cell adaptation.
 
 <!-- Add the paper title and publication link here. -->
-<!-- Add your images under images/ and uncomment these lines when available.
-![PI-EKAN framework](images/framework.png)
+![PI-EKAN flow chart](images/Flow_Chart.png)
 
+<!-- Add more images under images/ and uncomment when available.
 ![Experimental results](images/results.png)
 -->
 
